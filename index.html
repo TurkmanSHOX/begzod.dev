@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Begzod Axmetov - Web Developer">
+    <meta property="og:description" content="Professional Full-Stack Web Developer from Tashkent, Uzbekistan. Modern technologies, clean code, fast websites.">
+    <meta property="og:image" content="https://begzod.dev/begzod1.JPG">
+    <meta property="og:url" content="https://begzod.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uz_UZ">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Begzod Axmetov - Web Developer">
+    <meta name="twitter:description" content="Full-stack dasturchi. Tashkent, O'zbekiston.">
+    <meta name="twitter:image" content="https://begzod.dev/begzod1.JPG">
+
+    <!-- Theme & Canonical -->
+    <meta name="theme-color" content="#302b63">
+    <link rel="canonical" href="https://begzod.dev">
+    <title>Begzod.dev</title>
+    <link rel="icon" type="image/x-icon" href="Tulov.ga-main/begzod1.JPG">
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #fff;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Animated Background Particles */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Glowing Orbs */
+        .glow-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: 1;
+            animation: float 25s ease-in-out infinite;
+        }
+        
+        .orb-1 {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            top: -200px;
+            left: -200px;
+        }
+        
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            bottom: -150px;
+            right: -150px;
+            animation-delay: -10s;
+        }
+
+        .orb-3 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(100px, 100px) scale(1.1); }
+            50% { transform: translate(0, 150px) scale(0.9); }
+            75% { transform: translate(-100px, 100px) scale(1.05); }
+        }
+
+        /* Container */
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 40px;
+            padding: 60px 45px;
+            margin-bottom: 35px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            animation: cardEntry 1s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes cardEntry {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Profile Header */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 35px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            margin: 0 auto 30px;
+            padding: 8px;
+            position: relative;
+            animation: profilePulse 3s ease-in-out infinite;
+            cursor: pointer;
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .profile-image::before {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            z-index: -1;
+            filter: blur(20px);
+            opacity: 0.7;
+            animation: rotate 4s linear infinite;
+        }
+
+        .profile-image-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(15, 12, 41, 0.9);
+            overflow: hidden;
+            display: block;
+        }
+
+        @keyframes profilePulse {
+            0%, 100% {
+                box-shadow: 0 0 40px rgba(102, 126, 234, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 80px rgba(118, 75, 162, 0.8);
+            }
+        }
+
+        .display-name {
+            font-size: 42px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            animation: gradientFlow 3s ease infinite;
+            letter-spacing: -1px;
+        }
+
+        @keyframes gradientFlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .location {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #b8c1ec;
+            font-size: 17px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .location svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .bio {
+            color: #e2e8f0;
+            font-size: 18px;
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        /* Links Section */
+        .profile-links {
+            list-style: none;
+            display: grid;
+            gap: 18px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .link-el {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            animation: linkEntry 0.6s ease-out backwards;
+        }
+
+        .link-el:nth-child(1) { animation-delay: 0.1s; }
+        .link-el:nth-child(2) { animation-delay: 0.15s; }
+        .link-el:nth-child(3) { animation-delay: 0.2s; }
+        .link-el:nth-child(4) { animation-delay: 0.25s; }
+        .link-el:nth-child(5) { animation-delay: 0.3s; }
+        .link-el:nth-child(6) { animation-delay: 0.35s; }
+        .link-el:nth-child(7) { animation-delay: 0.4s; }
+        .link-el:nth-child(8) { animation-delay: 0.45s; }
+        .link-el:nth-child(9) { animation-delay: 0.5s; }
+        .link-el:nth-child(10) { animation-delay: 0.55s; }
+
+        @keyframes linkEntry {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            padding: 20px 28px;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+        }
+
+        .link-el::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(30deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+            border-radius: 22px;
+        }
+
+        .link-el:hover::before {
+            transform: translateX(20%);
+        }
+
+        .link-el::after {
+            content: '→';
+            position: absolute;
+            right: 28px;
+            top: 50%;
+            transform: translateY(-50%) translateX(-15px);
+            font-size: 22px;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .link-el:hover::after {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+
+        .link-el:hover .link-content {
+            transform: translateX(-15px) scale(1.02);
+            border-color: rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .link-icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-el:hover .link-icon {
+            transform: scale(1.2) rotate(-5deg);
+        }
+
+        .link-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        .link-name {
+            font-size: 18px;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        /* Individual Link Colors */
+        .phone .link-icon {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .phone:hover .link-content {
+            background: rgba(16, 185, 129, 0.15);
+            box-shadow: 0 15px 50px rgba(16, 185, 129, 0.3);
+        }
+
+        .sms .link-icon {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+        }
+
+        .sms:hover .link-content {
+            background: rgba(59, 130, 246, 0.15);
+            box-shadow: 0 15px 50px rgba(59, 130, 246, 0.3);
+        }
+
+        .telegram .link-icon {
+            background: linear-gradient(135deg, #229bd7, #1a7bb9);
+        }
+
+        .telegram:hover .link-content {
+            background: rgba(34, 155, 215, 0.15);
+            box-shadow: 0 15px 50px rgba(34, 155, 215, 0.3);
+        }
+
+        .instagram .link-icon {
+            background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        .instagram:hover .link-content {
+            background: rgba(225, 48, 108, 0.15);
+            box-shadow: 0 15px 50px rgba(225, 48, 108, 0.3);
+        }
+
+        .payment .link-icon {
+            background: linear-gradient(135deg, #10b981, #34d399);
+        }
+
+        .payment:hover .link-content {
+            background: rgba(16, 185, 129, 0.15);
+            box-shadow: 0 15px 50px rgba(16, 185, 129, 0.3);
+        }
+
+        .facebook .link-icon {
+            background: linear-gradient(135deg, #1877f2, #0c63d4);
+        }
+
+        .facebook:hover .link-content {
+            background: rgba(24, 119, 242, 0.15);
+            box-shadow: 0 15px 50px rgba(24, 119, 242, 0.3);
+        }
+
+        .website .link-icon {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
+
+        .website:hover .link-content {
+            background: rgba(139, 92, 246, 0.15);
+            box-shadow: 0 15px 50px rgba(139, 92, 246, 0.3);
+        }
+
+        .github .link-icon {
+            background: linear-gradient(135deg, #444, #666);
+        }
+
+        .github:hover .link-content {
+            background: rgba(150, 150, 150, 0.15);
+            box-shadow: 0 15px 50px rgba(150, 150, 150, 0.3);
+        }
+
+        .email .link-icon {
+            background: linear-gradient(135deg, #ed5c01, #ff7a1f);
+        }
+
+        .email:hover .link-content {
+            background: rgba(237, 92, 1, 0.15);
+            box-shadow: 0 15px 50px rgba(237, 92, 1, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 50px 18px;
+            }
+            
+            .profile-card {
+                padding: 45px 28px;
+            }
+            
+            .display-name {
+                font-size: 34px;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .link-icon {
+                width: 50px;
+                height: 50px;
+                min-width: 50px;
+            }
+
+            .link-icon svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <canvas id="particles-canvas"></canvas>
+    
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="/Tulov.ga-main/begzod1.JPG" alt="Begzod Axmetov" class="profile-image-inner">
+                </div>
+                <div class="display-name">Begzod Axmetov</div>
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/>
+                    </svg>
+                    Tashkent
+                </div>
+                <p class="bio">Web dasturchi / Developer / Innovator<br>Kelajak texnologiyalari yaratuvchisi 💻</p>
+            </div>
+        </div>
+
+        <ul class="profile-links">
+            <li>
+                <a class="link-el phone" href="tel:+998914258586">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">Telefon</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el sms" href="sms:+998914258586">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7 1.3 3 4.1 4.8 7.3 4.8 66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">SMS yuborish</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el telegram" href="https://t.me/turkmanshox">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">Telegram</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el instagram" href="https://instagram.com/turkmandev">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792">
+                                <path d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zm-502-220q-7 0-76.5-.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">Instagram</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el payment" href="/Tulov.ga-main/pay.html">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">To'lov</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el facebook" href="https://www.facebook.com/profile.php?id=100000000000">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path d="M100,50.28A50.38655,50.38655,0,0,1,58.33,99.72V64.17H69.44l2.23-13.89H58.33V40.56c0-3.89,1.39-6.95,7.5-6.95h6.39V20.84a74.69827,74.69827,0,0,0-11.11-1.12c-11.39,0-19.44,6.95-19.44,19.45V50.28H29.17V64.17h12.5V99.72A50.07525,50.07525,0,0,1,50,.28,50.147,50.147,0,0,1,100,50.28Z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">Facebook</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el website" href="https://begzod.dev">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm189.359 186.957c-4.597 2.968-10.516 3.896-16.09 2.522-5.574-1.375-10.429-4.911-13.397-9.508L371.5 131.5c-2.968-4.597-3.896-10.516-2.522-16.09 1.375-5.574 4.911-10.429 9.508-13.397l44.371-28.472c4.597-2.968 10.516-3.896 16.09-2.522 5.574 1.375 10.429 4.911 13.397 9.508l44.371 56.471c2.968 4.597 3.896 10.516 2.522 16.09-1.375 5.574-4.911 10.429-9.508 13.397l-44.37 28.472zM424.5 371.5l-44.371-56.471c-2.968-4.597-7.823-8.133-13.397-9.508-5.574-1.375-11.493-.446-16.09 2.522l-44.371 28.472c-4.597 2.968-8.133 7.823-9.508 13.397-1.375 5.574-.446 11.493 2.522 16.09l44.371 56.471c2.968 4.597 7.823 8.133 13.397 9.508 5.574 1.375 11.493.446 16.09-2.522l44.371-28.472c4.597-2.968 8.133-7.823 9.508-13.397 1.375-5.574.446-11.493-2.522-16.09zM140.5 87.5l44.371 56.471c2.968 4.597 7.823 8.133 13.397 9.508 5.574 1.375 11.493.446 16.09-2.522l44.371-28.472c4.597-2.968 8.133-7.823 9.508-13.397 1.375-5.574.446-11.493-2.522-16.09L221.344 36.527c-2.968-4.597-7.823-8.133-13.397-9.508-5.574-1.375-11.493-.446-16.09 2.522l-44.371 28.472c-4.597 2.968-8.133 7.823-9.508 13.397-1.375 5.574-.446 11.493 2.522 16.09zM87.5 140.5l56.471 44.371c4.597 2.968 10.516 3.896 16.09 2.522 5.574-1.375 10.429-4.911 13.397-9.508l28.472-44.371c2.968-4.597 3.896-10.516 2.522-16.09-1.375-5.574-4.911-10.429-9.508-13.397L138.473 59.656c-4.597-2.968-10.516-3.896-16.09-2.522-5.574 1.375-10.429 4.911-13.397 9.508L80.514 110.013c-2.968 4.597-3.896 10.516-2.522 16.09 1.375 5.574 4.911 10.429 9.508 13.397z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">Web sayt</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el github" href="https://github.com/turkmanshox">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">Github</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="link-el email" href="mailto:turkmanshax@gmail.com">
+                    <div class="link-content">
+                        <div class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
+                            </svg>
+                        </div>
+                        <span class="link-name">E-pochta</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2025 Begzod Axmetov. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </div>
+
+    <script>
+        // Particles Animation
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        let mouseX = 0, mouseY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        class Particle {
+            constructor() {
+                this.reset();
+                this.y = Math.random() * canvas.height;
+                this.opacity = Math.random() * 0.6 + 0.2;
+            }
+            
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = -10;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = Math.random() * 0.5 - 0.25;
+                this.speedY = Math.random() * 1.5 + 0.5;
+                this.hue = Math.random() * 60 + 220;
+            }
+            
+            update() {
+                const dx = mouseX - this.x;
+                const dy = mouseY - this.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < 150) {
+                    const force = (150 - distance) / 150;
+                    this.x -= (dx / distance) * force * 3;
+                    this.y -= (dy / distance) * force * 3;
+                }
+                
+                this.x += this.speedX;
+                this.y += this.speedY;
+                
+                if (this.y > canvas.height + 10) this.reset();
+                if (this.x > canvas.width) this.x = 0;
+                if (this.x < 0) this.x = canvas.width;
+            }
+            
+            draw() {
+                ctx.fillStyle = `hsla(${this.hue}, 80%, 60%, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        const particles = [];
+        for (let i = 0; i < 120; i++) {
+            particles.push(new Particle());
+        }
+
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 120) {
+                        const opacity = 0.3 * (1 - distance / 120);
+                        ctx.strokeStyle = `rgba(102, 126, 234, ${opacity})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            
+            connectParticles();
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Profile image click effect
+        const profileImage = document.querySelector('.profile-image');
+        profileImage.addEventListener('click', () => {
+            profileImage.style.transform = 'scale(0.95) rotate(0deg)';
+            setTimeout(() => {
+                profileImage.style.transform = 'scale(1) rotate(360deg)';
+            }, 100);
+            setTimeout(() => {
+                profileImage.style.transform = 'scale(1) rotate(0deg)';
+            }, 600);
+        });
+    </script>
+</body>
+</html>
