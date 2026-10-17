@@ -16,6 +16,7 @@
       nav_home: 'Bosh sahifa',
       nav_about: 'Men haqimda',
       nav_experience: 'Tajriba & Faoliyat',
+      nav_services: 'Xizmatlar',
       nav_skills: 'Texnologiyalar',
       nav_contact: 'Aloqa',
       nav_payment: 'To\'lov',
@@ -25,9 +26,10 @@
       hero_greeting: 'Salom, men',
       hero_role: 'Project Manager, Web Dasturchi & IT Mentor',
       hero_desc: 'LIMON DIGITAL AGENCY kompaniyasida Project Manager va mentor, "Al-Xorazmiy vorislari" Urganch tumani menejeri. Zamonaviy IT loyihalarni boshqarish, sifatli veb-yechimlar yaratish va yosh mutaxassislarni tayyorlash bilan shug\'ullanaman.',
+      hero_btn_services: 'Xizmatlar',
       hero_btn_contact: 'Bog\'lanish',
       hero_btn_experience: 'Tajriba & Faoliyat',
-      hero_btn_pay: 'To\'lov sahifasi',
+      hero_btn_pay: 'To\'lov',
 
       stats_experience: 'Yillik Tajriba',
       stats_teams: 'Boshqarilgan Loyihalar',
@@ -66,6 +68,118 @@
       exp_card4_inst: 'TATU Urganch Filiali',
       exp_card4_desc: 'Dasturiy ta\'minot arxitekturasi, ma\'lumotlar bazasi, tarmoq tizimlari va algoritmlarni chuqur o\'rganish.',
 
+      /* Xizmatlar Bo'limi */
+      services_badge: 'Xizmatlar & Ta\'lim',
+      services_title: 'Professional Xizmatlar',
+      services_desc: 'G‘oyangizni zamonaviy veb va mobil yechimlarga aylantiring, ilmiy izlanishlarni esa puxta tahlil va dasturiy ta’minot bilan birlashtiring.',
+      stats_sub_badge: 'Natijalarimiz',
+      stats_sub_title: 'Ilmiy va Akademik Muvaffaqiyatlarimiz',
+      stat_bachelor_title: 'Bakalavr Diplom Ishi',
+      stat_bachelor_desc: 'Anti-plagiat 90%+ toza, dasturiy ta\'minot va to\'liq tahlil bilan',
+      stat_masters_title: 'Magistrlik Ishi',
+      stat_masters_desc: 'Ilmiy izlanishlar va amaliy dasturiy ishlanmalar tajribasi',
+      stat_phd_title: 'PhD Ishi',
+      stat_phd_desc: 'Dasturiy qism, amaliy modellar va tahliliy yechimlar tajribasi',
+      stat_coursework_title: 'Kurs Ishi',
+      stat_coursework_desc: 'Tartibli matn, hisob-kitoblar, jadvallar va o‘z vaqtida topshirilgan',
+
+      srv1_chip: 'Web Development',
+      srv1_title: 'Veb-sayt Ishlab Chiqish',
+      srv1_slogan: 'G‘oyangizni zamonaviy veb-saytga aylantiring.',
+      srv1_f1: 'Internet-do‘konlar (E-commerce) yaratish',
+      srv1_f2: 'Kompaniya va tashkilotlar uchun korporativ saytlar',
+      srv1_f3: 'Shaxsiy portfolio va vizitka saytlari',
+      srv1_f4: 'Zamonaviy, barcha qurilmalarga mos interfeyslar',
+      srv1_f5: 'Mavjud saytlarni yangilash va takomillashtirish',
+      srv1_result: 'Zamonaviy, tezkor va foydalanishga qulay veb-sayt.',
+
+      srv2_chip: 'Mobile Apps',
+      srv2_title: 'Mobil Ilovalar Yaratish',
+      srv2_slogan: 'Biznesingiz va g‘oyalaringizni mobil qurilmalarga olib chiqing.',
+      srv2_f1: 'Android va iOS uchun mobil ilovalar',
+      srv2_f2: 'Qulay va zamonaviy foydalanuvchi interfeysi (UI/UX)',
+      srv2_f3: 'Buyurtma va xizmatlarni boshqarish ilovalari',
+      srv2_f4: 'Mavjud mobil ilovalarni takomillashtirish',
+      srv2_result: 'Foydalanuvchilar uchun qulay va ishonchli mobil yechimlar.',
+
+      srv3_chip: 'Telegram Bots',
+      srv3_title: 'Telegram Botlar Ishlab Chiqish',
+      srv3_slogan: 'Takroriy ishlarni avtomatlashtiring va vaqtingizni tejang.',
+      srv3_f1: 'Savdo va buyurtmalarni boshqarish botlari',
+      srv3_f2: 'Mijozlarga xizmat ko‘rsatish va yordam botlari',
+      srv3_f3: 'Test, viktorina va ta’lim botlari',
+      srv3_f4: 'Avtomatik xabarlar va eslatmalar tizimi',
+      srv3_f5: 'To‘lov va bildirishnoma tizimlari bilan integratsiya',
+      srv3_result: 'Ish jarayonlarini soddalashtiruvchi va vaqtni tejovchi botlar.',
+
+      srv4_chip: 'Desktop & Systems',
+      srv4_title: 'Kompyuter Dasturlari & Avtomatlashtirish',
+      srv4_slogan: 'Ish jarayonlaringizni raqamlashtiring va samaradorlikni oshiring.',
+      srv4_f1: 'Windows operatsion tizimi uchun amaliy dasturlar',
+      srv4_f2: 'Hisob-kitob va hisobotlarni avtomatlashtirish',
+      srv4_f3: 'Ofis ishlarini yengillashtiruvchi vositalar',
+      srv4_f4: 'Tashkilotlar uchun ichki boshqaruv tizimlari',
+      srv4_f5: 'Mavjud dasturiy ta’minotlarni takomillashtirish',
+      srv4_result: 'Kundalik vazifalarni bajarishni osonlashtiruvchi dasturiy yechimlar.',
+
+      srv5_chip: 'Ilmiy & Akademik',
+      srv5_title: 'Diplom, Magistrlik, PhD & Kurs Ishlari',
+      srv5_slogan: 'Ilmiy izlanishlarni amaliy dasturiy yechimlar va puxta tahlil bilan birlashtiring.',
+      srv5_f1: 'tajribasi',
+      srv5_f2: 'Matn originalligini oshirish va manbalarni rasmiylashtirish',
+      srv5_f3: 'Universitet talablari asosida hujjatlarni tayyorlash',
+      srv5_f4: 'Dasturiy ta’minot va amaliy loyihalarni ishlab chiqish',
+      srv5_f5: 'Grafiklar, jadvallar va himoya taqdimoti materiallari',
+      srv5_f6: 'aniq hisob-kitoblar va muddatida topshirish',
+      srv5_result: 'Universitet talablariga mos, himoyaga to‘liq tayyor ilmiy-amaliy ish.',
+
+      srv6_chip: '100% Individual Ta\'lim',
+      srv6_title: 'Individual «Kompyuter PRO» Kursi',
+      srv6_slogan: 'Kompyuterdan oddiy foydalanishdan amaliy va professional ko‘nikmalargacha.',
+      srv6_f1: 'Kompyuter savodxonligi va amaliy ko‘nikmalar',
+      srv6_f2: 'Microsoft Word, Excel va PowerPoint (100% amaliy)',
+      srv6_f3: 'Google Docs, Sheets, Forms va Drive bilan ishlash',
+      srv6_f4: 'Internet xavfsizligi va asosiy tarmoq bilimlari',
+      srv6_f5: 'ChatGPT yordamida ish jarayonlarini yengillashtirish',
+      srv6_f6: 'Rezyume va HTML/CSS rezyume sayti (GitHub Pages/Netlify)',
+      srv6_format: '15 ta dars (45 soat) · Sertifikat bilan',
+      srv6_result: 'Ish va o‘qishda foydalanish mumkin bo‘lgan amaliy kompyuter ko‘nikmalari.',
+
+      srv7_chip: 'AI & Media Trend',
+      srv7_title: 'Individual «AI-Media Kompyuter PRO» Kursi',
+      srv7_slogan: 'Sun’iy intellekt yordamida rasm, video va reklama kontentlari yarating.',
+      srv7_f1: 'Sun’iy intellekt yordamida rasm va video yaratish',
+      srv7_f2: 'Reklama va brendlar uchun kreativ materiallar',
+      srv7_f3: 'Samarali so‘rovlar — professional promptlar yozish',
+      srv7_f4: 'Kinematografik, surreal, ASMR va epik uslublar',
+      srv7_f5: 'Gemini, Flow, Whisk, Kling, Grok va Veo vositalari',
+      srv7_f6: 'Tayyor ishlar to‘plami va shaxsiy portfolio yaratish',
+      srv7_format: '15 ta dars (45 soat) · Sertifikat bilan',
+      srv7_result: 'Sun’iy intellekt yordamida vizual va reklama kontentlari yaratish amaliy ko‘nikmalari.',
+
+      result_lbl: 'Natija:',
+      btn_order: 'Buyurtma berish',
+      btn_enroll: 'Kursga yozilish',
+
+      prin_sub_badge: 'Ishonchli Hamkorlik',
+      prin_title: 'Biz Bilan Ishlash Afzalliklari',
+      prin1_title: 'Individual yondashuv',
+      prin1_desc: 'Har bir buyurtma talablar asosida ko‘rib chiqiladi.',
+      prin2_title: 'Aniq kelishuv',
+      prin2_desc: 'Ish hajmi, narxi va muddati oldindan belgilanadi.',
+      prin3_title: 'Amaliy natija',
+      prin3_desc: 'Har bir loyiha uchun vazifaga mos yechim tanlanadi.',
+      prin4_title: 'Zamonaviy texnologiyalar',
+      prin4_desc: 'Loyihaning ehtiyojiga qarab vositalar tanlanadi.',
+      prin5_title: 'Ishonchli aloqa',
+      prin5_desc: 'Buyurtma jarayonida mijoz bilan muloqot olib boriladi.',
+
+      cta_badge: 'Loyihangizni Boshlang',
+      cta_title: 'G‘oyangizni amalga oshirishni bugun boshlang!',
+      cta_desc: 'Sizga mos xizmatni tanlang va loyihangiz haqida bog‘laning. Qisqa vaqt ichida eng ma\'qul yechimni taklif qilamiz.',
+      cta_btn_order: 'Buyurtma berish',
+      cta_btn_tg: 'Telegram orqali bog‘lanish',
+
       skills_badge: 'Texnologiyalar & Boshqaruv',
       skills_title: 'Ko\'nikmalar va Metodologiyalar',
       skills_desc: 'Loyihalarni muvaffaqiyatli amalga oshirishda qo\'llaniladigan vositalar.',
@@ -89,6 +203,7 @@
       nav_home: 'Home',
       nav_about: 'About',
       nav_experience: 'Experience & Career',
+      nav_services: 'Services',
       nav_skills: 'Skills',
       nav_contact: 'Contact',
       nav_payment: 'Payment',
@@ -98,9 +213,10 @@
       hero_greeting: 'Hello, I\'m',
       hero_role: 'Project Manager, Web Developer & IT Mentor',
       hero_desc: 'Project Manager and Mentor at LIMON DIGITAL AGENCY, Manager of "Al-Khwarizmi Descendants" in Urgench district. Leading digital product delivery, web development, and mentoring future IT talents.',
+      hero_btn_services: 'Services',
       hero_btn_contact: 'Contact Me',
       hero_btn_experience: 'Experience & Career',
-      hero_btn_pay: 'Payment Page',
+      hero_btn_pay: 'Payment',
 
       stats_experience: 'Years Experience',
       stats_teams: 'Managed Projects',
@@ -139,6 +255,118 @@
       exp_card4_inst: 'TUIT Urgench Branch',
       exp_card4_desc: 'Comprehensive engineering degree covering software architecture, databases, networks, and algorithms.',
 
+      /* Services Section */
+      services_badge: 'Services & Education',
+      services_title: 'Professional Services',
+      services_desc: 'Transform your vision into cutting-edge web and mobile solutions, combining academic research with solid software and data analysis.',
+      stats_sub_badge: 'Our Track Record',
+      stats_sub_title: 'Academic & Scientific Results',
+      stat_bachelor_title: 'Bachelor Theses',
+      stat_bachelor_desc: '90%+ plagiarism-free, complete software code and thorough analysis',
+      stat_masters_title: 'Master Dissertations',
+      stat_masters_desc: 'Research, advanced data modeling, and practical software implementations',
+      stat_phd_title: 'PhD Research',
+      stat_phd_desc: 'Practical software modules, simulation models, and analytical solutions',
+      stat_coursework_title: 'Coursework Projects',
+      stat_coursework_desc: 'Well-structured, accurate computations, charts, and on-time delivery',
+
+      srv1_chip: 'Web Development',
+      srv1_title: 'Web Development',
+      srv1_slogan: 'Turn your ideas into modern, high-performance websites.',
+      srv1_f1: 'E-commerce and online store development',
+      srv1_f2: 'Corporate websites for enterprises and organizations',
+      srv1_f3: 'Personal portfolios and digital business cards',
+      srv1_f4: 'Modern, fully responsive UI/UX for all screens',
+      srv1_f5: 'Redesigning and modernizing existing websites',
+      srv1_result: 'Modern, lightning-fast, and user-friendly website.',
+
+      srv2_chip: 'Mobile Apps',
+      srv2_title: 'Mobile App Development',
+      srv2_slogan: 'Bring your business and ideas to mobile devices.',
+      srv2_f1: 'Cross-platform mobile apps for Android and iOS',
+      srv2_f2: 'Intuitive, modern UI/UX design',
+      srv2_f3: 'Order management and service delivery apps',
+      srv2_f4: 'Upgrading and optimizing existing mobile apps',
+      srv2_result: 'Reliable, convenient mobile solutions for your users.',
+
+      srv3_chip: 'Telegram Bots',
+      srv3_title: 'Telegram Bot Development',
+      srv3_slogan: 'Automate repetitive workflows and save valuable time.',
+      srv3_f1: 'E-commerce, catalog, and order management bots',
+      srv3_f2: 'Customer support and CRM assistant bots',
+      srv3_f3: 'Interactive quizzes, test, and educational bots',
+      srv3_f4: 'Automated notification and scheduled alert systems',
+      srv3_f5: 'Seamless integration with payment gateways and APIs',
+      srv3_result: 'Smart bots that streamline processes and save your time.',
+
+      srv4_chip: 'Desktop & Systems',
+      srv4_title: 'Desktop Software & Automation',
+      srv4_slogan: 'Digitize your operations and boost business efficiency.',
+      srv4_f1: 'Custom desktop software for Windows OS',
+      srv4_f2: 'Automated accounting, calculations, and reporting',
+      srv4_f3: 'Internal productivity tools for office workflows',
+      srv4_f4: 'Internal management and operations systems (CRM/ERP)',
+      srv4_f5: 'Enhancing and scaling existing software programs',
+      srv4_result: 'Robust software tools simplifying everyday business tasks.',
+
+      srv5_chip: 'Academic Solutions',
+      srv5_title: 'Theses, Master, PhD & Coursework',
+      srv5_slogan: 'Combine academic research with practical software solutions and deep analysis.',
+      srv5_f1: 'proven practical experience',
+      srv5_f2: 'Enhancing text originality and proper bibliographic citations',
+      srv5_f3: 'Compliance with formal university academic standards',
+      srv5_f4: 'Developing custom software modules and practical projects',
+      srv5_f5: 'Analytical charts, statistical tables, and defense slide decks',
+      srv5_f6: 'accurate calculations and punctuality',
+      srv5_result: 'Defense-ready, high-standard academic and software project.',
+
+      srv6_chip: '100% Individual Mentoring',
+      srv6_title: 'Individual "Computer PRO" Course',
+      srv6_slogan: 'From basic computer skills to practical, professional mastery.',
+      srv6_f1: 'Computer literacy and strong practical skills',
+      srv6_f2: 'Hands-on Microsoft Word, Excel, and PowerPoint (100% practical)',
+      srv6_f3: 'Mastering Google Docs, Sheets, Forms, and Drive',
+      srv6_f4: 'Cybersecurity essentials and networking basics',
+      srv6_f5: 'Leveraging ChatGPT to boost daily office productivity',
+      srv6_f6: 'Professional resume and HTML/CSS resume website deployment',
+      srv6_format: '15 lessons (45 hours) · Official Certificate',
+      srv6_result: 'Practical, immediately applicable computer skills for career and study.',
+
+      srv7_chip: 'AI & Media Trends',
+      srv7_title: 'Individual "AI-Media Computer PRO" Course',
+      srv7_slogan: 'Create stunning images, videos, and marketing content using Artificial Intelligence.',
+      srv7_f1: 'Generating professional images and videos with AI',
+      srv7_f2: 'Creative content for advertising, branding, and social media',
+      srv7_f3: 'Mastering prompt engineering and generative workflows',
+      srv7_f4: 'Cinematic, surreal, ASMR, and epic visual styles',
+      srv7_f5: 'Hands-on experience with Gemini, Flow, Whisk, Kling, Grok, and Veo',
+      srv7_f6: 'Creating a polished personal portfolio with finished media assets',
+      srv7_format: '15 lessons (45 hours) · Official Certificate',
+      srv7_result: 'Practical expertise in creating visual and advertising media with AI.',
+
+      result_lbl: 'Result:',
+      btn_order: 'Order Service',
+      btn_enroll: 'Enroll in Course',
+
+      prin_sub_badge: 'Trusted Partnership',
+      prin_title: 'Why Work With Us',
+      prin1_title: 'Individual Approach',
+      prin1_desc: 'Every project is tailored precisely to your specific requirements.',
+      prin2_title: 'Clear Agreements',
+      prin2_desc: 'Scope of work, pricing, and deadlines are transparently agreed upfront.',
+      prin3_title: 'Practical Results',
+      prin3_desc: 'We select the most effective solution for every unique task.',
+      prin4_title: 'Modern Technologies',
+      prin4_desc: 'Cutting-edge, battle-tested tools matched to your project needs.',
+      prin5_title: 'Reliable Communication',
+      prin5_desc: 'Direct, continuous communication throughout the entire process.',
+
+      cta_badge: 'Start Your Project',
+      cta_title: 'Turn your ideas into reality today!',
+      cta_desc: 'Choose the right service and get in touch. We will craft the most optimal solution promptly.',
+      cta_btn_order: 'Order Now',
+      cta_btn_tg: 'Contact via Telegram',
+
       skills_badge: 'Skills & Tools',
       skills_title: 'Competencies & Methodologies',
       skills_desc: 'Technologies and agile methodologies utilized for successful project delivery.',
@@ -162,6 +390,7 @@
       nav_home: 'Главная',
       nav_about: 'Обо мне',
       nav_experience: 'Опыт и Карьера',
+      nav_services: 'Услуги',
       nav_skills: 'Навыки',
       nav_contact: 'Контакты',
       nav_payment: 'Оплата',
@@ -171,9 +400,10 @@
       hero_greeting: 'Привет, я',
       hero_role: 'Project Manager, Веб-разработчик и IT-ментор',
       hero_desc: 'Project Manager и ментор в LIMON DIGITAL AGENCY, менеджер проекта "Наследники Аль-Хорезми" в Ургенчском районе. Управление IT-проектами, веб-разработка и наставничество.',
+      hero_btn_services: 'Услуги',
       hero_btn_contact: 'Связаться',
       hero_btn_experience: 'Опыт и Карьера',
-      hero_btn_pay: 'Страница оплаты',
+      hero_btn_pay: 'Оплата',
 
       stats_experience: 'Лет опыта',
       stats_teams: 'Успешных проектов',
@@ -211,6 +441,118 @@
       exp_card4_title: 'Компьютерный инжиниринг (Бакалавр)',
       exp_card4_inst: 'Ургенчский филиал ТАТУ',
       exp_card4_desc: 'Программная инженерия, архитектура баз данных, сетевая безопасность и алгоритмы.',
+
+      /* Секция услуг */
+      services_badge: 'Услуги и Обучение',
+      services_title: 'Профессиональные Услуги',
+      services_desc: 'Превратите ваши идеи в современные веб и мобильные решения, совмещая научные исследования с надежным ПО и анализом данных.',
+      stats_sub_badge: 'Наши Результаты',
+      stats_sub_title: 'Научно-Академический Опыт',
+      stat_bachelor_title: 'Бакалаврские дипломные работы',
+      stat_bachelor_desc: 'Антиплагиат 90%+, программная часть и глубокий анализ',
+      stat_masters_title: 'Магистерские диссертации',
+      stat_masters_desc: 'Исследования, моделирование и практические программные разработки',
+      stat_phd_title: 'PhD исследования',
+      stat_phd_desc: 'Программная часть, прикладные модели и аналитические решения',
+      stat_coursework_title: 'Курсовые работы',
+      stat_coursework_desc: 'Структурированный текст, точные расчеты, таблицы и сдача в срок',
+
+      srv1_chip: 'Web Development',
+      srv1_title: 'Веб-разработка',
+      srv1_slogan: 'Превратите вашу идею в современный веб-сайт.',
+      srv1_f1: 'Создание интернет-магазинов (E-commerce)',
+      srv1_f2: 'Корпоративные сайты для компаний и организаций',
+      srv1_f3: 'Персональные портфолио и сайты-визитки',
+      srv1_f4: 'Адаптивный интерфейс для всех типов устройств',
+      srv1_f5: 'Обновление и оптимизация существующих сайтов',
+      srv1_result: 'Современный, быстрый и удобный веб-сайт.',
+
+      srv2_chip: 'Mobile Apps',
+      srv2_title: 'Создание Мобильных Приложений',
+      srv2_slogan: 'Перенесите ваш бизнес и идеи на мобильные устройства.',
+      srv2_f1: 'Мобильные приложения для Android и iOS',
+      srv2_f2: 'Удобный и современный пользовательский интерфейс (UI/UX)',
+      srv2_f3: 'Приложения для управления заказами и сервисами',
+      srv2_f4: 'Модернизация существующих приложений',
+      srv2_result: 'Удобные и надежные мобильные решения для пользователей.',
+
+      srv3_chip: 'Telegram Bots',
+      srv3_title: 'Разработка Telegram-ботов',
+      srv3_slogan: 'Автоматизируйте рутинные задачи и экономьте время.',
+      srv3_f1: 'Боты для онлайн-продаж и управления заказами',
+      srv3_f2: 'Боты для клиентской поддержки и сервиса',
+      srv3_f3: 'Тестовые, викторинные и обучающие боты',
+      srv3_f4: 'Системы автоматических уведомлений и рассылок',
+      srv3_f5: 'Интеграция с платежными системами и API',
+      srv3_result: 'Умные боты, упрощающие рабочие процессы и экономящие время.',
+
+      srv4_chip: 'Desktop & Systems',
+      srv4_title: 'Компьютерные Программы и Автоматизация',
+      srv4_slogan: 'Цифровизируйте рабочие процессы и повышайте эффективность.',
+      srv4_f1: 'Прикладные программы для ОС Windows',
+      srv4_f2: 'Автоматизация расчетов и формирования отчетов',
+      srv4_f3: 'Программы для упрощения офисной работы',
+      srv4_f4: 'Внутренние системы управления для организаций (CRM/ERP)',
+      srv4_f5: 'Доработка и масштабирование существующего ПО',
+      srv4_result: 'Программные решения, упрощающие повседневные задачи.',
+
+      srv5_chip: 'Наука и Академия',
+      srv5_title: 'Дипломные, Магистерские, PhD и Курсовые',
+      srv5_slogan: 'Объедините научные изыскания с программными решениями и тщательным анализом.',
+      srv5_f1: 'богатый практический опыт выполнения работ',
+      srv5_f2: 'Повышение оригинальности текста (Антиплагиат) и оформление источников',
+      srv5_f3: 'Оформление документов по стандартам университетов',
+      srv5_f4: 'Разработка программного обеспечения и практических моделей',
+      srv5_f5: 'Графики, таблицы, диаграммы и презентации для защиты',
+      srv5_f6: 'точные расчеты и сдача в установленные сроки',
+      srv5_result: 'Полностью готовая к успешной защите научно-практическая работа.',
+
+      srv6_chip: '100% Индивидуальное Обучение',
+      srv6_title: 'Индивидуальный Курс «Компьютер PRO»',
+      srv6_slogan: 'От уверенного пользователя до профессиональных практических навыков.',
+      srv6_f1: 'Компьютерная грамотность и глубокие прикладные навыки',
+      srv6_f2: 'Microsoft Word, Excel и PowerPoint (100% практика)',
+      srv6_f3: 'Работа с Google Docs, Sheets, Forms и Drive',
+      srv6_f4: 'Интернет-безопасность и основы сетевых технологий',
+      srv6_f5: 'Эффективное применение ChatGPT в офисных процессах',
+      srv6_f6: 'Составление резюме и создание сайта-резюме на HTML/CSS',
+      srv6_format: '15 уроков (45 часов) · Сертификат',
+      srv6_result: 'Практические компьютерные навыки для успешной работы и учебы.',
+
+      srv7_chip: 'AI & Media Тренды',
+      srv7_title: 'Индивидуальный Курс «AI-Media Компьютер PRO»',
+      srv7_slogan: 'Создавайте изображения, видео и рекламный контент с помощью ИИ.',
+      srv7_f1: 'Генерация профессиональных изображений и видео через ИИ',
+      srv7_f2: 'Креативные материалы для рекламы, брендов и соцсетей',
+      srv7_f3: 'Промпт-инжиниринг и правильная постановка задач ИИ',
+      srv7_f4: 'Кинематографичные, сюрреалистичные, ASMR и эпичные стили',
+      srv7_f5: 'Практика с Gemini, Flow, Whisk, Kling, Grok и Veo',
+      srv7_f6: 'Создание готового портфолио с собственными медиа-кейсами',
+      srv7_format: '15 уроков (45 часов) · Сертификат',
+      srv7_result: 'Практические навыки создания визуального и рекламного контента с помощью ИИ.',
+
+      result_lbl: 'Результат:',
+      btn_order: 'Заказать услугу',
+      btn_enroll: 'Записаться на курс',
+
+      prin_sub_badge: 'Надежное Сотрудничество',
+      prin_title: 'Преимущества Работы с Нами',
+      prin1_title: 'Индивидуальный подход',
+      prin1_desc: 'Каждый заказ рассматривается с учетом ваших конкретных требований.',
+      prin2_title: 'Четкие договоренности',
+      prin2_desc: 'Объем работ, стоимость и сроки фиксируются заранее.',
+      prin3_title: 'Практический результат',
+      prin3_desc: 'Для каждой задачи подбирается наиболее эффективное решение.',
+      prin4_title: 'Современные технологии',
+      prin4_desc: 'Используются передовые и проверенные на практике инструменты.',
+      prin5_title: 'Надежная связь',
+      prin5_desc: 'Постоянный диалог с клиентом на всех этапах выполнения заказа.',
+
+      cta_badge: 'Начните Свой Проект',
+      cta_title: 'Начните реализацию вашей идеи уже сегодня!',
+      cta_desc: 'Выберите подходящую услугу и свяжитесь с нами для подбора лучшего решения.',
+      cta_btn_order: 'Заказать услугу',
+      cta_btn_tg: 'Связаться в Telegram',
 
       skills_badge: 'Навыки и Инструменты',
       skills_title: 'Компетенции и Методологии',
@@ -631,7 +973,84 @@
   }
 
   /* ------------------------------------------------------------------------
-     11. Initialize Everything on DOM Ready
+     11. Number Counter Animation for Statistics
+     ------------------------------------------------------------------------ */
+  function initCounters() {
+    const counterElements = document.querySelectorAll('.stat-big-number[data-count]');
+    if (!counterElements.length) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-count'), 10) || 0;
+          const suffix = el.getAttribute('data-suffix') || '';
+
+          if (prefersReducedMotion) {
+            el.textContent = target + suffix;
+            obs.unobserve(el);
+            return;
+          }
+
+          const duration = 1400; // ms
+          const startTime = performance.now();
+
+          function updateCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out quad
+            const easeOutProgress = 1 - (1 - progress) * (1 - progress);
+            const currentCount = Math.floor(easeOutProgress * target);
+
+            el.textContent = currentCount + suffix;
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              el.textContent = target + suffix;
+            }
+          }
+
+          requestAnimationFrame(updateCounter);
+          obs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    counterElements.forEach(el => observer.observe(el));
+  }
+
+  /* ------------------------------------------------------------------------
+     12. Interactive Service Order Links
+     ------------------------------------------------------------------------ */
+  function initServiceOrderLinks() {
+    document.querySelectorAll('[data-order-service]').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        const serviceName = this.getAttribute('data-order-service');
+        const contactSection = document.getElementById('contact');
+        const msgField = document.getElementById('senderMessage');
+        const nameField = document.getElementById('senderName');
+
+        if (msgField) {
+          msgField.value = `Salom Begzod! Men "${serviceName}" bo'yicha buyurtma bermoqchiman / ma'lumot olmoqchiman.`;
+        }
+
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        setTimeout(() => {
+          if (nameField) nameField.focus();
+          showToast(`"${serviceName}" tanlandi!`, 3000);
+        }, 600);
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
+     13. Initialize Everything on DOM Ready
      ------------------------------------------------------------------------ */
   document.addEventListener('DOMContentLoaded', function () {
     initTheme();
@@ -642,6 +1061,8 @@
     initScrollTop();
     initCopyButtons();
     initContactForm();
+    initCounters();
+    initServiceOrderLinks();
     initParticleCanvas();
   });
 

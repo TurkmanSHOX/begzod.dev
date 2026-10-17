@@ -143,6 +143,9 @@
               <a class="nav-link" href="#experience" data-i18n="nav_experience">Tajriba & Faoliyat</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#services" data-i18n="nav_services">Xizmatlar</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#skills" data-i18n="nav_skills">Texnologiyalar</a>
             </li>
             <li class="nav-item">
@@ -210,14 +213,14 @@
 
         <!-- Primary Action Buttons -->
         <div class="hero-buttons">
-          <a href="#contact" class="btn-modern btn-primary-gradient">
+          <a href="#services" class="btn-modern btn-primary-gradient">
+            <i class="bi bi-briefcase-fill"></i> <span data-i18n="hero_btn_services">Xizmatlar</span>
+          </a>
+          <a href="#contact" class="btn-modern btn-glass">
             <i class="bi bi-send-fill"></i> <span data-i18n="hero_btn_contact">Bog'lanish</span>
           </a>
-          <a href="#experience" class="btn-modern btn-glass">
-            <i class="bi bi-briefcase-fill"></i> <span data-i18n="hero_btn_experience">Tajriba & Faoliyat</span>
-          </a>
           <a href="pay.html" class="btn-modern btn-emerald">
-            <i class="bi bi-wallet2"></i> <span data-i18n="hero_btn_pay">To'lov sahifasi</span>
+            <i class="bi bi-wallet2"></i> <span data-i18n="hero_btn_pay">To'lov</span>
           </a>
         </div>
 
@@ -442,7 +445,444 @@
     </section>
 
     <!-- =======================================================================
-         4. Tech Stack & Competencies Section
+         4. Services & Academic Solutions Section (Xizmatlar Bo'limi)
+         ======================================================================= -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-badge"><i class="bi bi-briefcase-fill"></i> <span data-i18n="services_badge">Xizmatlar & Ta'lim</span></span>
+          <h2 class="section-title" data-i18n="services_title">Professional Xizmatlar</h2>
+          <p class="section-desc" data-i18n="services_desc">
+            G‘oyangizni zamonaviy veb va mobil yechimlarga aylantiring, ilmiy izlanishlarni esa puxta tahlil va dasturiy ta’minot bilan birlashtiring.
+          </p>
+        </div>
+
+        <!-- NATIJALARIMIZ (Statistik Kartalar) -->
+        <div class="services-stats-wrap mb-5">
+          <div class="text-center mb-4">
+            <span class="sub-badge"><i class="bi bi-award-fill text-warning"></i> <span data-i18n="stats_sub_badge">Natijalarimiz</span></span>
+            <h3 class="fs-4 fw-bold font-heading text-white mt-2" data-i18n="stats_sub_title">Ilmiy va Akademik Muvaffaqiyatlarimiz</h3>
+          </div>
+
+          <div class="row g-3">
+            <!-- Stat 1: Bakalavr Diplom Ishlari -->
+            <div class="col-6 col-lg-3">
+              <div class="service-stat-card">
+                <div class="stat-icon-glow"><i class="bi bi-mortarboard-fill text-primary"></i></div>
+                <div class="stat-big-number gradient-text" data-count="35" data-suffix="+">35+</div>
+                <div class="stat-card-title" data-i18n="stat_bachelor_title">Bakalavr Diplom Ishi</div>
+                <div class="stat-card-desc" data-i18n="stat_bachelor_desc">Anti-plagiat 90%+ toza, dasturiy ta'minot va to'liq tahlil bilan</div>
+              </div>
+            </div>
+
+            <!-- Stat 2: Magistrlik Ishlari -->
+            <div class="col-6 col-lg-3">
+              <div class="service-stat-card">
+                <div class="stat-icon-glow"><i class="bi bi-journal-bookmark-fill text-info"></i></div>
+                <div class="stat-big-number gradient-text" data-count="10" data-suffix="">10</div>
+                <div class="stat-card-title" data-i18n="stat_masters_title">Magistrlik Ishi</div>
+                <div class="stat-card-desc" data-i18n="stat_masters_desc">Ilmiy izlanishlar va amaliy dasturiy ishlanmalar tajribasi</div>
+              </div>
+            </div>
+
+            <!-- Stat 3: PhD Ishlari -->
+            <div class="col-6 col-lg-3">
+              <div class="service-stat-card">
+                <div class="stat-icon-glow"><i class="bi bi-diagram-3-fill text-danger"></i></div>
+                <div class="stat-big-number gradient-text" data-count="4" data-suffix="">4</div>
+                <div class="stat-card-title" data-i18n="stat_phd_title">PhD Ishi</div>
+                <div class="stat-card-desc" data-i18n="stat_phd_desc">Dasturiy qism, amaliy modellar va tahliliy yechimlar tajribasi</div>
+              </div>
+            </div>
+
+            <!-- Stat 4: Kurs Ishlari -->
+            <div class="col-6 col-lg-3">
+              <div class="service-stat-card">
+                <div class="stat-icon-glow"><i class="bi bi-file-earmark-check-fill text-success"></i></div>
+                <div class="stat-big-number gradient-text" data-count="100" data-suffix="+">100+</div>
+                <div class="stat-card-title" data-i18n="stat_coursework_title">Kurs Ishi</div>
+                <div class="stat-card-desc" data-i18n="stat_coursework_desc">Tartibli matn, hisob-kitoblar, jadvallar va o‘z vaqtida topshirilgan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 TA XIZMAT KARTALARI (3 Ustun: col-lg-4 col-md-6 col-12) -->
+        <div class="row g-4 justify-content-center">
+          
+          <!-- Xizmat 1: Veb-sayt Ishlab Chiqish -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100">
+              <div>
+                <div class="service-card-header">
+                  <div class="service-icon-box icon-cyan">
+                    <i class="bi bi-globe2"></i>
+                  </div>
+                  <span class="service-chip" data-i18n="srv1_chip">Web Development</span>
+                </div>
+                <h3 class="service-title font-heading" data-i18n="srv1_title">Veb-sayt Ishlab Chiqish</h3>
+                <p class="service-slogan" data-i18n="srv1_slogan">G‘oyangizni zamonaviy veb-saytga aylantiring.</p>
+                
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv1_f1">Internet-do‘konlar (E-commerce) yaratish</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv1_f2">Kompaniya va tashkilotlar uchun korporativ saytlar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv1_f3">Shaxsiy portfolio va vizitka saytlari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv1_f4">Zamonaviy, barcha qurilmalarga mos interfeyslar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv1_f5">Mavjud saytlarni yangilash va takomillashtirish</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="service-result-box">
+                  <span class="result-badge"><i class="bi bi-stars"></i> <span data-i18n="result_lbl">Natija:</span></span>
+                  <span class="result-text" data-i18n="srv1_result">Zamonaviy, tezkor va foydalanishga qulay veb-sayt.</span>
+                </div>
+
+                <div class="service-card-footer">
+                  <a href="#contact" class="btn-service-primary" data-order-service="Veb-sayt ishlab chiqish">
+                    <i class="bi bi-send-fill"></i> <span data-i18n="btn_order">Buyurtma berish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-service-tg" title="Telegramda yozish" aria-label="Telegramda yozish">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xizmat 2: Mobil Ilovalar Yaratish -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100">
+              <div>
+                <div class="service-card-header">
+                  <div class="service-icon-box icon-emerald">
+                    <i class="bi bi-phone-fill"></i>
+                  </div>
+                  <span class="service-chip" data-i18n="srv2_chip">Mobile Apps</span>
+                </div>
+                <h3 class="service-title font-heading" data-i18n="srv2_title">Mobil Ilovalar Yaratish</h3>
+                <p class="service-slogan" data-i18n="srv2_slogan">Biznesingiz va g‘oyalaringizni mobil qurilmalarga olib chiqing.</p>
+                
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv2_f1">Android va iOS uchun mobil ilovalar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv2_f2">Qulay va zamonaviy foydalanuvchi interfeysi (UI/UX)</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv2_f3">Buyurtma va xizmatlarni boshqarish ilovalari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv2_f4">Mavjud mobil ilovalarni takomillashtirish</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="service-result-box">
+                  <span class="result-badge"><i class="bi bi-stars"></i> <span data-i18n="result_lbl">Natija:</span></span>
+                  <span class="result-text" data-i18n="srv2_result">Foydalanuvchilar uchun qulay va ishonchli mobil yechimlar.</span>
+                </div>
+
+                <div class="service-card-footer">
+                  <a href="#contact" class="btn-service-primary" data-order-service="Mobil ilovalar yaratish">
+                    <i class="bi bi-send-fill"></i> <span data-i18n="btn_order">Buyurtma berish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-service-tg" title="Telegramda yozish" aria-label="Telegramda yozish">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xizmat 3: Telegram Botlar Ishlab Chiqish -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100">
+              <div>
+                <div class="service-card-header">
+                  <div class="service-icon-box icon-purple">
+                    <i class="bi bi-robot"></i>
+                  </div>
+                  <span class="service-chip" data-i18n="srv3_chip">Telegram Bots</span>
+                </div>
+                <h3 class="service-title font-heading" data-i18n="srv3_title">Telegram Botlar Ishlab Chiqish</h3>
+                <p class="service-slogan" data-i18n="srv3_slogan">Takroriy ishlarni avtomatlashtiring va vaqtingizni tejang.</p>
+                
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv3_f1">Savdo va buyurtmalarni boshqarish botlari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv3_f2">Mijozlarga xizmat ko‘rsatish va yordam botlari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv3_f3">Test, viktorina va ta’lim botlari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv3_f4">Avtomatik xabarlar va eslatmalar tizimi</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv3_f5">To‘lov va bildirishnoma tizimlari bilan integratsiya</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="service-result-box">
+                  <span class="result-badge"><i class="bi bi-stars"></i> <span data-i18n="result_lbl">Natija:</span></span>
+                  <span class="result-text" data-i18n="srv3_result">Ish jarayonlarini soddalashtiruvchi va vaqtni tejovchi botlar.</span>
+                </div>
+
+                <div class="service-card-footer">
+                  <a href="#contact" class="btn-service-primary" data-order-service="Telegram botlar ishlab chiqish">
+                    <i class="bi bi-send-fill"></i> <span data-i18n="btn_order">Buyurtma berish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-service-tg" title="Telegramda yozish" aria-label="Telegramda yozish">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xizmat 4: Kompyuter Dasturlari va Avtomatlashtirish -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100">
+              <div>
+                <div class="service-card-header">
+                  <div class="service-icon-box icon-amber">
+                    <i class="bi bi-pc-display-horizontal"></i>
+                  </div>
+                  <span class="service-chip" data-i18n="srv4_chip">Desktop & Systems</span>
+                </div>
+                <h3 class="service-title font-heading" data-i18n="srv4_title">Kompyuter Dasturlari & Avtomatlashtirish</h3>
+                <p class="service-slogan" data-i18n="srv4_slogan">Ish jarayonlaringizni raqamlashtiring va samaradorlikni oshiring.</p>
+                
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv4_f1">Windows operatsion tizimi uchun amaliy dasturlar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv4_f2">Hisob-kitob va hisobotlarni avtomatlashtirish</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv4_f3">Ofis ishlarini yengillashtiruvchi vositalar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv4_f4">Tashkilotlar uchun ichki boshqaruv tizimlari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv4_f5">Mavjud dasturiy ta’minotlarni takomillashtirish</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="service-result-box">
+                  <span class="result-badge"><i class="bi bi-stars"></i> <span data-i18n="result_lbl">Natija:</span></span>
+                  <span class="result-text" data-i18n="srv4_result">Kundalik vazifalarni bajarishni osonlashtiruvchi dasturiy yechimlar.</span>
+                </div>
+
+                <div class="service-card-footer">
+                  <a href="#contact" class="btn-service-primary" data-order-service="Kompyuter dasturlari va avtomatlashtirish">
+                    <i class="bi bi-send-fill"></i> <span data-i18n="btn_order">Buyurtma berish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-service-tg" title="Telegramda yozish" aria-label="Telegramda yozish">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xizmat 5: Diplom, Magistrlik, PhD va Kurs Ishlarini Ishlab Chiqish -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100">
+              <div>
+                <div class="service-card-header">
+                  <div class="service-icon-box icon-pink">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <span class="service-chip" data-i18n="srv5_chip">Ilmiy & Akademik</span>
+                </div>
+                <h3 class="service-title font-heading" data-i18n="srv5_title">Diplom, Magistrlik, PhD & Kurs Ishlari</h3>
+                <p class="service-slogan" data-i18n="srv5_slogan">Ilmiy izlanishlarni amaliy dasturiy yechimlar va puxta tahlil bilan birlashtiring.</p>
+                
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check2-circle"></i> <strong>35+ bakalavr, 10 magistrlik, 4 PhD</strong> <span data-i18n="srv5_f1">tajribasi</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv5_f2">Matn originalligini oshirish va manbalarni rasmiylashtirish</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv5_f3">Universitet talablari asosida hujjatlarni tayyorlash</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv5_f4">Dasturiy ta’minot va amaliy loyihalarni ishlab chiqish</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv5_f5">Grafiklar, jadvallar va himoya taqdimoti materiallari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <strong>100+ kurs ishi:</strong> <span data-i18n="srv5_f6">aniq hisob-kitoblar va muddatida topshirish</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="service-result-box">
+                  <span class="result-badge"><i class="bi bi-stars"></i> <span data-i18n="result_lbl">Natija:</span></span>
+                  <span class="result-text" data-i18n="srv5_result">Universitet talablariga mos, himoyaga to‘liq tayyor ilmiy-amaliy ish.</span>
+                </div>
+
+                <div class="service-card-footer">
+                  <a href="#contact" class="btn-service-primary" data-order-service="Diplom va Kurs ishlari">
+                    <i class="bi bi-send-fill"></i> <span data-i18n="btn_order">Buyurtma berish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-service-tg" title="Telegramda yozish" aria-label="Telegramda yozish">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xizmat 6: Individual «Kompyuter PRO» Kursi -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100">
+              <div>
+                <div class="service-card-header">
+                  <div class="service-icon-box icon-blue">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <span class="service-chip" data-i18n="srv6_chip">100% Individual Ta'lim</span>
+                </div>
+                <h3 class="service-title font-heading" data-i18n="srv6_title">Individual «Kompyuter PRO» Kursi</h3>
+                <p class="service-slogan" data-i18n="srv6_slogan">Kompyuterdan oddiy foydalanishdan amaliy va professional ko‘nikmalargacha.</p>
+                
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv6_f1">Kompyuter savodxonligi va amaliy ko‘nikmalar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv6_f2">Microsoft Word, Excel va PowerPoint (100% amaliy)</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv6_f3">Google Docs, Sheets, Forms va Drive bilan ishlash</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv6_f4">Internet xavfsizligi va asosiy tarmoq bilimlari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv6_f5">ChatGPT yordamida ish jarayonlarini yengillashtirish</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv6_f6">Rezyume va HTML/CSS rezyume sayti (GitHub Pages/Netlify)</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="service-format-badge">
+                  <i class="bi bi-calendar-check"></i> <span data-i18n="srv6_format">15 ta dars (45 soat) · Sertifikat bilan</span>
+                </div>
+
+                <div class="service-result-box">
+                  <span class="result-badge"><i class="bi bi-stars"></i> <span data-i18n="result_lbl">Natija:</span></span>
+                  <span class="result-text" data-i18n="srv6_result">Ish va o‘qishda foydalanish mumkin bo‘lgan amaliy kompyuter ko‘nikmalari.</span>
+                </div>
+
+                <div class="service-card-footer">
+                  <a href="#contact" class="btn-service-primary" data-order-service="Individual Kompyuter PRO kursi">
+                    <i class="bi bi-pencil-square"></i> <span data-i18n="btn_enroll">Kursga yozilish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-service-tg" title="Telegramda yozish" aria-label="Telegramda yozish">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xizmat 7: Individual «AI-Media Kompyuter PRO» Kursi -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-card h-100">
+              <div>
+                <div class="service-card-header">
+                  <div class="service-icon-box icon-violet">
+                    <i class="bi bi-stars"></i>
+                  </div>
+                  <span class="service-chip" data-i18n="srv7_chip">AI & Media Trend</span>
+                </div>
+                <h3 class="service-title font-heading" data-i18n="srv7_title">Individual «AI-Media Kompyuter PRO» Kursi</h3>
+                <p class="service-slogan" data-i18n="srv7_slogan">Sun’iy intellekt yordamida rasm, video va reklama kontentlari yarating.</p>
+                
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv7_f1">Sun’iy intellekt yordamida rasm va video yaratish</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv7_f2">Reklama va brendlar uchun kreativ materiallar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv7_f3">Samarali so‘rovlar — professional promptlar yozish</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv7_f4">Kinematografik, surreal, ASMR va epik uslublar</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv7_f5">Gemini, Flow, Whisk, Kling, Grok va Veo vositalari</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span data-i18n="srv7_f6">Tayyor ishlar to‘plami va shaxsiy portfolio yaratish</span></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="service-format-badge">
+                  <i class="bi bi-calendar-check"></i> <span data-i18n="srv7_format">15 ta dars (45 soat) · Sertifikat bilan</span>
+                </div>
+
+                <div class="service-result-box">
+                  <span class="result-badge"><i class="bi bi-stars"></i> <span data-i18n="result_lbl">Natija:</span></span>
+                  <span class="result-text" data-i18n="srv7_result">Sun’iy intellekt yordamida vizual va reklama kontentlari yaratish amaliy ko‘nikmalari.</span>
+                </div>
+
+                <div class="service-card-footer">
+                  <a href="#contact" class="btn-service-primary" data-order-service="Individual AI-Media Kompyuter PRO kursi">
+                    <i class="bi bi-pencil-square"></i> <span data-i18n="btn_enroll">Kursga yozilish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-service-tg" title="Telegramda yozish" aria-label="Telegramda yozish">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 8. BIZ BILAN ISHLASH (AFZALLIKLAR) -->
+        <div class="principles-wrap mt-5 pt-4">
+          <div class="text-center mb-4">
+            <span class="sub-badge"><i class="bi bi-shield-check text-success"></i> <span data-i18n="prin_sub_badge">Ishonchli Hamkorlik</span></span>
+            <h3 class="fs-4 fw-bold font-heading text-white mt-2" data-i18n="prin_title">Biz Bilan Ishlash Afzalliklari</h3>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-lg col-md-4 col-sm-6 col-12">
+              <div class="principle-card">
+                <div class="principle-icon"><i class="bi bi-person-check-fill text-primary"></i></div>
+                <h4 class="principle-title" data-i18n="prin1_title">Individual yondashuv</h4>
+                <p class="principle-desc" data-i18n="prin1_desc">Har bir buyurtma talablar asosida ko‘rib chiqiladi.</p>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 col-sm-6 col-12">
+              <div class="principle-card">
+                <div class="principle-icon"><i class="bi bi-file-earmark-text-fill text-info"></i></div>
+                <h4 class="principle-title" data-i18n="prin2_title">Aniq kelishuv</h4>
+                <p class="principle-desc" data-i18n="prin2_desc">Ish hajmi, narxi va muddati oldindan belgilanadi.</p>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 col-sm-6 col-12">
+              <div class="principle-card">
+                <div class="principle-icon"><i class="bi bi-trophy-fill text-warning"></i></div>
+                <h4 class="principle-title" data-i18n="prin3_title">Amaliy natija</h4>
+                <p class="principle-desc" data-i18n="prin3_desc">Har bir loyiha uchun vazifaga mos yechim tanlanadi.</p>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 col-sm-6 col-12">
+              <div class="principle-card">
+                <div class="principle-icon"><i class="bi bi-gear-wide-connected text-danger"></i></div>
+                <h4 class="principle-title" data-i18n="prin4_title">Zamonaviy texnologiyalar</h4>
+                <p class="principle-desc" data-i18n="prin4_desc">Loyihaning ehtiyojiga qarab vositalar tanlanadi.</p>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-4 col-sm-6 col-12">
+              <div class="principle-card">
+                <div class="principle-icon"><i class="bi bi-chat-quote-fill text-success"></i></div>
+                <h4 class="principle-title" data-i18n="prin5_title">Ishonchli aloqa</h4>
+                <p class="principle-desc" data-i18n="prin5_desc">Buyurtma jarayonida mijoz bilan muloqot olib boriladi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. YAKUNIY CHAQIRUV (CTA BANNER) -->
+        <div class="cta-banner-wrap mt-5">
+          <div class="cta-banner">
+            <div class="row align-items-center g-4 text-center text-lg-start">
+              <div class="col-lg-8">
+                <span class="cta-mini-badge" data-i18n="cta_badge"><i class="bi bi-lightning-charge-fill text-warning"></i> Loyihangizni Boshlang</span>
+                <h3 class="cta-title font-heading" data-i18n="cta_title">G‘oyangizni amalga oshirishni bugun boshlang!</h3>
+                <p class="cta-subtitle mb-0" data-i18n="cta_desc">
+                  Sizga mos xizmatni tanlang va loyihangiz haqida bog‘laning. Qisqa vaqt ichida eng ma'qul yechimni taklif qilamiz.
+                </p>
+              </div>
+              <div class="col-lg-4 text-lg-end text-center">
+                <div class="d-flex flex-column flex-sm-row justify-content-lg-end justify-content-center gap-3">
+                  <a href="#contact" class="btn-modern btn-primary-gradient py-3 px-4">
+                    <i class="bi bi-send-check-fill"></i> <span data-i18n="cta_btn_order">Buyurtma berish</span>
+                  </a>
+                  <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="btn-modern btn-glass py-3 px-4">
+                    <i class="bi bi-telegram text-info"></i> <span data-i18n="cta_btn_tg">Telegram orqali bog‘lanish</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. Tech Stack & Competencies Section
          ======================================================================= -->
     <section class="tech-section" id="skills">
       <div class="container">
@@ -674,6 +1114,7 @@
               <li><a href="#hero" data-i18n="nav_home">Bosh sahifa</a></li>
               <li><a href="#about" data-i18n="nav_about">Men haqimda</a></li>
               <li><a href="#experience" data-i18n="nav_experience">Tajriba & Faoliyat</a></li>
+              <li><a href="#services" data-i18n="nav_services">Xizmatlar</a></li>
               <li><a href="#skills" data-i18n="nav_skills">Texnologiyalar</a></li>
               <li><a href="#contact" data-i18n="nav_contact">Aloqa</a></li>
               <li><a href="pay.html" data-i18n="nav_payment">To'lov</a></li>
