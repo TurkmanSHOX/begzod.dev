@@ -8,6 +8,11 @@
 (function () {
   'use strict';
 
+  // Production Canonical Host Redirection (begzod.dev -> www.begzod.dev)
+  if (typeof window !== 'undefined' && window.location && window.location.hostname === 'begzod.dev') {
+    window.location.replace('https://www.begzod.dev' + window.location.pathname + window.location.search + window.location.hash);
+  }
+
   /* ------------------------------------------------------------------------
      1. Multilingual Dictionary (UZ / EN / RU)
      ------------------------------------------------------------------------ */

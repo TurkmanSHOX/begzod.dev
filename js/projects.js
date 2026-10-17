@@ -51,7 +51,7 @@
       description: 'Zamonaviy shaxsiy vizitka va portfolio veb-sayti. Responsive dizayn, qulay to\'lov rekvizitlari va interaktiv elementlar bilan boyitilgan.',
       tags: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap 5'],
       githubUrl: 'https://github.com/TurkmanSHOX/begzod.dev',
-      liveUrl: 'https://begzod.dev'
+      liveUrl: 'https://www.begzod.dev/'
     },
     {
       id: 'informatika-platforma',
