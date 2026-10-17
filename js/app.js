@@ -19,29 +19,29 @@
       nav_services: 'Xizmatlar',
       nav_skills: 'Texnologiyalar',
       nav_contact: 'Aloqa',
-      nav_payment: 'To\'lov',
-      nav_connect_btn: 'Bog\'lanish',
+      nav_payment: 'To‘lov',
+      nav_connect_btn: 'Bog‘lanish',
 
-      hero_location: 'Urganch, O\'zbekiston',
+      hero_location: 'Urganch, O‘zbekiston',
       hero_greeting: 'Salom, men',
       hero_role: 'Project Manager, Web Dasturchi & IT Mentor',
-      hero_desc: 'LIMON DIGITAL AGENCY kompaniyasida Project Manager va mentor, "Al-Xorazmiy vorislari" Urganch tumani menejeri. Zamonaviy IT loyihalarni boshqarish, sifatli veb-yechimlar yaratish va yosh mutaxassislarni tayyorlash bilan shug\'ullanaman.',
+      hero_desc: 'LIMON DIGITAL AGENCY kompaniyasida Project Manager va mentor, "Al-Xorazmiy vorislari" Urganch tumani menejeri. Zamonaviy IT loyihalarni boshqarish, sifatli veb-yechimlar yaratish va yosh mutaxassislarni tayyorlash bilan shug‘ullanaman.',
       hero_btn_services: 'Xizmatlar',
-      hero_btn_contact: 'Bog\'lanish',
+      hero_btn_contact: 'Bog‘lanish',
       hero_btn_experience: 'Tajriba & Faoliyat',
-      hero_btn_pay: 'To\'lov',
+      hero_btn_pay: 'To‘lov',
 
       stats_experience: 'Yillik Tajriba',
       stats_teams: 'Boshqarilgan Loyihalar',
       stats_agency: 'Limon Digital Agency',
-      stats_location: 'Xorazm, O\'zbekiston',
+      stats_location: 'Xorazm, O‘zbekiston',
 
       about_badge: 'Men haqimda',
-      about_title: 'Shaxsiy va Kasbiy Ma\'lumotlar',
-      about_desc: 'IT boshqaruvi, dasturlash va yoshlar ta\'limiga bo\'lgan professional yondashuvim.',
-      about_p1: 'Men Begzod Axmetov — Toshkent Axborot Texnologiyalari Universiteti (TATU) Urganch filiali Kompyuter injiniringi yo\'nalishini bitirganman. Hozirda LIMON DIGITAL AGENCY agentligida Project Manager va mentor, shuningdek "Al-Xorazmiy vorislari" tizimining Urganch tumanida menejeri sifatida faoliyat yuritaman.',
-      about_p2: 'Faoliyatim IT loyihalarni samarali rejalashtirish, dasturchilar jamoasini boshqarish, texnik standartlar va zamonaviy veb-platformalar ishlab chiqishni o\'z ichiga oladi.',
-      about_name_lbl: 'To\'liq ism',
+      about_title: 'Shaxsiy va Kasbiy Ma’lumotlar',
+      about_desc: 'IT boshqaruvi, dasturlash va yoshlar ta’limiga bo‘lgan professional yondashuvim.',
+      about_p1: 'Men Begzod Axmetov — Toshkent Axborot Texnologiyalari Universiteti (TATU) Urganch filiali Kompyuter injiniringi yo‘nalishini bitirganman. Hozirda LIMON DIGITAL AGENCY agentligida Project Manager va mentor, shuningdek "Al-Xorazmiy vorislari" tizimining Urganch tumanida menejeri sifatida faoliyat yuritaman.',
+      about_p2: 'Faoliyatim IT loyihalarni samarali rejalashtirish, dasturchilar jamoasini boshqarish, texnik standartlar va zamonaviy veb-platformalar ishlab chiqishni o‘z ichiga oladi.',
+      about_name_lbl: 'To‘liq ism',
       about_role_lbl: 'Lavozim',
       about_role_val: 'Project Manager & Mentor',
       about_loc_lbl: 'Manzil',
@@ -50,7 +50,7 @@
 
       exp_badge: 'Tajriba & Martaba',
       exp_title: 'Professional Ish Tajribasi',
-      exp_desc: 'Boshqaruv, mentorlik va ta\'lim sohasidagi asosiy faoliyat bosqichlarim.',
+      exp_desc: 'Boshqaruv, mentorlik va ta’lim sohasidagi asosiy faoliyat bosqichlarim.',
 
       exp_card1_title: 'Mentor & Project Manager',
       exp_card1_inst: 'LIMON DIGITAL AGENCY',
@@ -58,24 +58,24 @@
 
       exp_card2_title: 'Menejer',
       exp_card2_inst: '"Al-Xorazmiy vorislari" (Urganch tumani)',
-      exp_card2_desc: 'Iqtidorli yoshlar bilan ishlash, innovatsion g\'oyalar va IT loyihalarni qo\'llab-quvvatlash hamda jarayonlarni boshqarish.',
+      exp_card2_desc: 'Iqtidorli yoshlar bilan ishlash, innovatsion g‘oyalar va IT loyihalarni qo‘llab-quvvatlash hamda jarayonlarni boshqarish.',
 
-      exp_card3_title: 'Maxsus fan o\'qituvchisi',
+      exp_card3_title: 'Maxsus fan o‘qituvchisi',
       exp_card3_inst: 'Urganch Raqamli Texnologiyalar Texnikumi',
-      exp_card3_desc: 'Veb-dasturlash, algoritmlar va axborot texnologiyalari yo\'nalishida talabalarga amaliy ta\'lim va kasbiy ko\'nikmalar berish.',
+      exp_card3_desc: 'Veb-dasturlash, algoritmlar va axborot texnologiyalari yo‘nalishida talabalarga amaliy ta’lim va kasbiy ko‘nikmalar berish.',
 
       exp_card4_title: 'Kompyuter injiniringi (Bakalavr)',
       exp_card4_inst: 'TATU Urganch Filiali',
-      exp_card4_desc: 'Dasturiy ta\'minot arxitekturasi, ma\'lumotlar bazasi, tarmoq tizimlari va algoritmlarni chuqur o\'rganish.',
+      exp_card4_desc: 'Dasturiy ta’minot arxitekturasi, ma’lumotlar bazasi, tarmoq tizimlari va algoritmlarni chuqur o‘rganish.',
 
-      /* Xizmatlar Bo'limi */
-      services_badge: 'Xizmatlar & Ta\'lim',
+      /* Xizmatlar Bo‘limi */
+      services_badge: 'Xizmatlar & Ta’lim',
       services_title: 'Professional Xizmatlar',
       services_desc: 'G‘oyangizni zamonaviy veb va mobil yechimlarga aylantiring, ilmiy izlanishlarni esa puxta tahlil va dasturiy ta’minot bilan birlashtiring.',
       stats_sub_badge: 'Natijalarimiz',
       stats_sub_title: 'Ilmiy va Akademik Muvaffaqiyatlarimiz',
       stat_bachelor_title: 'Bakalavr Diplom Ishi',
-      stat_bachelor_desc: 'Anti-plagiat 90%+ toza, dasturiy ta\'minot va to\'liq tahlil bilan',
+      stat_bachelor_desc: 'Anti-plagiat 90%+ toza, dasturiy ta’minot va to‘liq tahlil bilan',
       stat_masters_title: 'Magistrlik Ishi',
       stat_masters_desc: 'Ilmiy izlanishlar va amaliy dasturiy ishlanmalar tajribasi',
       stat_phd_title: 'PhD Ishi',
@@ -133,7 +133,7 @@
       srv5_f6: 'aniq hisob-kitoblar va muddatida topshirish',
       srv5_result: 'Universitet talablariga mos, himoyaga to‘liq tayyor ilmiy-amaliy ish.',
 
-      srv6_chip: '100% Individual Ta\'lim',
+      srv6_chip: '100% Individual Ta’lim',
       srv6_title: 'Individual «Kompyuter PRO» Kursi',
       srv6_slogan: 'Kompyuterdan oddiy foydalanishdan amaliy va professional ko‘nikmalargacha.',
       srv6_f1: 'Kompyuter savodxonligi va amaliy ko‘nikmalar',
@@ -176,28 +176,28 @@
 
       cta_badge: 'Loyihangizni Boshlang',
       cta_title: 'G‘oyangizni amalga oshirishni bugun boshlang!',
-      cta_desc: 'Sizga mos xizmatni tanlang va loyihangiz haqida bog‘laning. Qisqa vaqt ichida eng ma\'qul yechimni taklif qilamiz.',
+      cta_desc: 'Sizga mos xizmatni tanlang va loyihangiz haqida bog‘laning. Qisqa vaqt ichida eng ma’qul yechimni taklif qilamiz.',
       cta_btn_order: 'Buyurtma berish',
       cta_btn_tg: 'Telegram orqali bog‘lanish',
 
       skills_badge: 'Texnologiyalar & Boshqaruv',
-      skills_title: 'Ko\'nikmalar va Metodologiyalar',
-      skills_desc: 'Loyihalarni muvaffaqiyatli amalga oshirishda qo\'llaniladigan vositalar.',
+      skills_title: 'Ko‘nikmalar va Metodologiyalar',
+      skills_desc: 'Loyihalarni muvaffaqiyatli amalga oshirishda qo‘llaniladigan vositalar.',
 
       contact_badge: 'Aloqa',
-      contact_title: 'Men bilan Bog\'laning',
-      contact_desc: 'Savollar, loyihalar yoki hamkorlik takliflari bo\'yicha to\'g\'ridan-to\'g\'ri aloqaga chiqing.',
-      contact_direct_title: 'To\'g\'ridan-to\'g\'ri Aloqa Kanallari',
-      contact_phone_reveal: 'Raqamni ko\'rsatish',
+      contact_title: 'Men bilan Bog‘laning',
+      contact_desc: 'Savollar, loyihalar yoki hamkorlik takliflari bo‘yicha to‘g‘ridan-to‘g‘ri aloqaga chiqing.',
+      contact_direct_title: 'To‘g‘ridan-to‘g‘ri Aloqa Kanallari',
+      contact_phone_reveal: 'Raqamni ko‘rsatish',
       contact_form_title: 'Tezkor Xabar Qoldirish',
-      contact_form_desc: 'Xabaringizni yozing va Telegram yoki Email orqali to\'g\'ridan-to\'g\'ri yo\'llang.',
+      contact_form_desc: 'Xabaringizni yozing va Telegram yoki Email orqali to‘g‘ridan-to‘g‘ri yo‘llang.',
       contact_form_name: 'Ismingiz *',
       contact_form_email: 'Email yoki Telefoningiz',
       contact_form_msg: 'Xabaringiz *',
       contact_form_method: 'Yuborish usuli:',
       contact_form_submit: 'Xabarni yuborish',
 
-      footer_desc: 'Project Manager, Web Dasturchi & IT Mentor portfolio veb-sayti. Urganch, Xorazm, O\'zbekiston.'
+      footer_desc: 'Project Manager, Web Dasturchi & IT Mentor portfolio veb-sayti. Urganch, Xorazm, O‘zbekiston.'
     },
     en: {
       nav_home: 'Home',
@@ -830,7 +830,7 @@
       }
 
       if (sendMethod === 'telegram') {
-        const fullMessage = `Salom Begzod! Mening ismim: ${name}.\nEmail: ${email || 'ko\'rsatilmadi'}\n\nXabar:\n${message}`;
+        const fullMessage = `Salom Begzod! Mening ismim: ${name}.\nEmail: ${email || 'ko‘rsatilmadi'}\n\nXabar:\n${message}`;
         const telegramUrl = `https://t.me/turkmanshox?text=${encodeURIComponent(fullMessage)}`;
         showToast('Telegram ochilmoqda...');
         window.open(telegramUrl, '_blank', 'noopener,noreferrer');
@@ -1034,7 +1034,7 @@
         const nameField = document.getElementById('senderName');
 
         if (msgField) {
-          msgField.value = `Salom Begzod! Men "${serviceName}" bo'yicha buyurtma bermoqchiman / ma'lumot olmoqchiman.`;
+          msgField.value = `Salom Begzod! Men "${serviceName}" bo‘yicha buyurtma bermoqchiman / ma’lumot olmoqchiman.`;
         }
 
         if (contactSection) {
