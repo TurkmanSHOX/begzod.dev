@@ -831,7 +831,7 @@
 
       if (sendMethod === 'telegram') {
         const fullMessage = `Salom Begzod! Mening ismim: ${name}.\nEmail: ${email || 'ko‘rsatilmadi'}\n\nXabar:\n${message}`;
-        const telegramUrl = `https://t.me/turkmanshox?text=${encodeURIComponent(fullMessage)}`;
+        const telegramUrl = `https://t.me/Akhmetov_Begzod?text=${encodeURIComponent(fullMessage)}`;
         showToast('Telegram ochilmoqda...');
         window.open(telegramUrl, '_blank', 'noopener,noreferrer');
       } else {
