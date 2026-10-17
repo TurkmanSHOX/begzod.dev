@@ -1,371 +1,245 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To'lov | Begzod Axmetov</title>
-    <meta name="description" content="Begzod Axmetov - To'lov qilish sahifasi. TPay orqali tezkor to'lov.">
-    <link rel="icon" href="begzod1.JPG" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To'lov Rekvizitlari | Begzod Axmetov — Begzod.dev</title>
 
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-            color: #fff;
-            overflow-x: hidden;
-            min-height: 100vh;
-            position: relative;
-        }
+  <!-- Meta SEO -->
+  <meta name="description" content="Begzod Axmetov — Rasmiy to'lov rekvizitlari sahifasi. Karta raqami va TPay (Tirikchilik) orqali xavfsiz to'lov.">
+  <meta name="author" content="Begzod Axmetov">
+  <meta name="theme-color" content="#302b63">
+  <link rel="canonical" href="https://begzod.dev/pay.html">
 
-        /* Animated Background */
-        #particles-canvas {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            z-index: 0;
-            pointer-events: none;
-        }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://begzod.dev/pay.html">
+  <meta property="og:title" content="To'lov Rekvizitlari | Begzod Axmetov">
+  <meta property="og:description" content="Begzod Axmetov rasmiy to'lov sahifasi. Karta raqami va TPay orqali tezkor to'lov.">
+  <meta property="og:image" content="https://begzod.dev/assets/images/begzod-hd.jpg">
 
-        .glow-orb {
-            position: fixed;
-            border-radius: 50%;
-            filter: blur(120px);
-            opacity: 0.2;
-            pointer-events: none;
-            z-index: 1;
-            animation: float 25s ease-in-out infinite;
-        }
-        .orb-1 { width: 600px; height: 600px; background: linear-gradient(135deg, #667eea, #764ba2); top: -200px; left: -200px; }
-        .orb-2 { width: 500px; height: 500px; background: linear-gradient(135deg, #f093fb, #f5576c); bottom: -150px; right: -150px; animation-delay: -10s; }
-        .orb-3 { width: 400px; height: 400px; background: linear-gradient(135deg, #4facfe, #00f2fe); top: 50%; left: 50%; transform: translate(-50%, -50%); animation-delay: -5s; }
+  <!-- Favicons -->
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            25% { transform: translate(100px, 100px) scale(1.1); }
-            50% { transform: translate(0, 150px) scale(0.9); }
-            75% { transform: translate(-100px, 100px) scale(1.05); }
-        }
+  <!-- Google Fonts: Space Grotesk + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-        .container {
-            position: relative;
-            z-index: 2;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 80px 24px;
-            text-align: center;
-        }
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-        .payment-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 40px;
-            padding: 50px 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-            animation: cardEntry 1s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .payment-card::before {
-            content: '';
-            position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate { to { transform: rotate(360deg); } }
-        @keyframes cardEntry {
-            from { opacity: 0; transform: translateY(50px) scale(0.9); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-
-        h1 {
-            font-size: 36px;
-            font-weight: 900;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 16px;
-            animation: gradientFlow 3s ease infinite;
-        }
-
-        @keyframes gradientFlow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        .subtitle {
-            color: #b8c1ec;
-            font-size: 18px;
-            margin-bottom: 32px;
-            line-height: 1.6;
-        }
-
-        .card-display {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border-radius: 20px;
-            padding: 24px;
-            margin: 32px 0;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card-number {
-            font-family: 'Courier New', monospace;
-            font-size: 28px;
-            letter-spacing: 3px;
-            color: #fff;
-            margin: 16px 0;
-            user-select: all;
-        }
-
-        .card-details {
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
-            color: #b8c1ec;
-        }
-
-        .copy-btn {
-            display: block;
-            width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #10b981, #059669);
-            color: white;
-            border: none;
-            border-radius: 18px;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            margin: 24px 0;
-            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .copy-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
-        }
-
-        .copy-btn:active {
-            transform: translateY(0);
-        }
-
-        .copy-btn.copied {
-            background: linear-gradient(135deg, #34d399, #10b981);
-        }
-
-        .payment-buttons {
-            display: grid;
-            gap: 18px;
-            margin-top: 32px;
-        }
-
-        .pay-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            padding: 20px 28px;
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 22px;
-            text-decoration: none;
-            color: #fff;
-            font-weight: 600;
-            font-size: 18px;
-            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .pay-link::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transform: translateX(-100%);
-            transition: transform 0.6s;
-        }
-
-        .pay-link:hover::before {
-            transform: translateX(100%);
-        }
-
-        .pay-link:hover {
-            transform: translateY(-5px) scale(1.02);
-            border-color: rgba(255, 255, 255, 0.25);
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .pay-link img {
-            height: 36px;
-            filter: brightness(1.1);
-            transition: transform 0.3s;
-        }
-
-        .pay-link:hover img {
-            transform: scale(1.1);
-        }
-
-        .footer {
-            margin-top: 60px;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 14px;
-        }
-
-        @media (max-width: 640px) {
-            .container { padding: 50px 18px; }
-            h1 { font-size: 30px; }
-            .card-number { font-size: 22px; letter-spacing: 2px; }
-            .pay-link { font-size: 16px; padding: 16px 20px; }
-            .pay-link img { height: 30px; }
-        }
-    </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="glow-orb orb-1"></div>
-    <div class="glow-orb orb-2"></div>
-    <div class="glow-orb orb-3"></div>
-    <canvas id="particles-canvas"></canvas>
 
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-orb orb-top-left" aria-hidden="true"></div>
+  <div class="ambient-orb orb-bottom-right" aria-hidden="true"></div>
+
+  <!-- Background Interactive Particles Canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- =========================================================================
+       Navbar
+       ========================================================================= -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-label="Begzod.dev Bosh sahifa">
+          <span>Begzod</span><span class="brand-dot">.dev</span>
+          <span class="brand-badge">To'lov</span>
+        </a>
+
+        <div class="ms-auto d-flex align-items-center gap-2">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn me-1" id="themeToggleBtn" type="button" title="Mavzuni almashtirish (Dark/Light)" aria-label="Mavzuni almashtirish">
+            <i class="bi bi-moon-stars-fill" id="themeToggleIcon"></i>
+          </button>
+
+          <a href="index.html" class="btn-modern btn-glass py-2 px-3 fs-6">
+            <i class="bi bi-house-door-fill"></i> Bosh sahifa
+          </a>
+          <a href="index.html#contact" class="btn-modern btn-primary-gradient py-2 px-3 fs-6 d-none d-sm-inline-flex">
+            <i class="bi bi-chat-dots-fill"></i> Aloqa
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       Main Payment Section
+       ========================================================================= -->
+  <main class="payment-section">
     <div class="container">
-        <div class="payment-card">
-            <h1>To'lov qilish</h1>
-            <p class="subtitle">Tezkor va xavfsiz to'lov uchun quyidagi usullardan foydalaning</p>
-
-            <!-- Karta ko'rsatish -->
-            <div class="card-display">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                    <img src="humo.png" alt="Humo" style="height: 32px;">
-                    <img src="cip.png" alt="Chip" style="height: 28px;">
-                </div>
-                <div class="card-number" id="cardNumber">9860 3566 3069 6108</div>
-                <div class="card-details">
-                    <span>BEGZOD AKHMETOV</span>
-                    <span>07/28</span>
-                </div>
-            </div>
-
-            <!-- Nusxa olish tugmasi -->
-            <button class="copy-btn" id="copyBtn">
-                <span id="btnText">Karta raqamini nusxalash</span>
-            </button>
-
-            <!-- To'lov tugmalari -->
-            <div class="payment-buttons">
-
-                <a href="https://tirikchilik.uz/turkmanshox" class="pay-link" target="_blank">
-                    <img src="https://tpaymobile.com/wp-content/uploads/2024/08/TPay-Logo.svg" alt="TPay">
-                    TPay orqali to'lash
-                </a>
-            </div>
+      <div class="payment-card-wrap">
+        
+        <!-- Header -->
+        <div class="text-center mb-4">
+          <span class="section-badge"><i class="bi bi-shield-check"></i> Xavfsiz Rekvizitlar</span>
+          <h1 class="section-title gradient-text mb-2">To'lov Qilish</h1>
+          <p class="section-desc mb-0">
+            Tezkor va qulay to'lov uchun quyidagi rasmiy karta ma'lumotlaridan foydalaning.
+          </p>
         </div>
 
-        <div class="footer">
-            <p>© 2025 Begzod Axmetov. Barcha huquqlar himoyalangan.</p>
+        <!-- 3D Realistic Virtual Credit Card -->
+        <div class="virtual-credit-card" id="creditCard">
+          <div class="card-top-row">
+            <img src="assets/images/humo.png" alt="Humo to'lov tizimi" class="card-brand-logo" onerror="this.onerror=null; this.src='humo.png';">
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/nfs.png" alt="NFC kontaktsiz" style="height: 24px;" onerror="this.onerror=null; this.src='nfs.png';">
+              <img src="assets/images/cip.png" alt="EMV Chip" class="card-chip" onerror="this.onerror=null; this.src='cip.png';">
+            </div>
+          </div>
+
+          <!-- Card Number Display (Kept in HTML, not in public JS as requested) -->
+          <div class="card-number-display" id="cardNumberDisplay" title="Nusxalash uchun bosing">
+            9860 3566 3069 6108
+          </div>
+
+          <!-- Card Bottom Row -->
+          <div class="card-bottom-row">
+            <div>
+              <small class="text-white-50 d-block" style="font-size: 0.72rem;">KARTA EGASI</small>
+              <span class="card-holder-name">BEGZOD AKHMETOV</span>
+            </div>
+            <div class="text-end">
+              <small class="text-white-50 d-block" style="font-size: 0.72rem;">AMAL QILISH</small>
+              <span class="card-expiry">07/28</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Copy Card Number Button -->
+        <button 
+          class="btn-modern btn-emerald copy-card-btn" 
+          id="copyCardBtn"
+          data-copy="9860356630696108"
+          data-copy-msg="Karta raqami nusxalandi!"
+          type="button"
+        >
+          <i class="bi bi-copy"></i>
+          <span id="copyBtnText">Karta raqamini nusxalash</span>
+        </button>
+
+        <!-- Official Payment Provider (TPay / Tirikchilik) -->
+        <div class="glass-card mb-4">
+          <h2 class="fs-5 fw-bold text-white mb-3 text-center font-heading">Tezkor Onlayn To'lov</h2>
+          
+          <a href="https://tirikchilik.uz/turkmanshox" target="_blank" rel="noopener noreferrer" class="pay-provider-button">
+            <img src="https://tpaymobile.com/wp-content/uploads/2024/08/TPay-Logo.svg" alt="TPay" class="provider-logo-img" onerror="this.onerror=null; this.src='assets/images/t.png';">
+            <span>TPay (Tirikchilik) orqali to'lash</span>
+            <i class="bi bi-box-arrow-up-right ms-auto"></i>
+          </a>
+
+          <p class="text-muted small text-center mb-0 mt-2">
+            TPay orqali istalgan bank kartasidan (Uzcard, Humo, Visa) to'g'ridan-to'g'ri to'lashingiz mumkin.
+          </p>
+        </div>
+
+        <!-- Supported Banking Apps Row -->
+        <div class="glass-card mb-4 text-center">
+          <small class="text-uppercase text-muted fw-bold d-block mb-3" style="letter-spacing: 0.08em;">
+            Qo'llab-quvvatlanuvchi ilovalar orqali to'lash
+          </small>
+          <div class="supported-apps-row">
+            <img src="assets/images/humo.png" alt="Humo" class="supported-app-logo" title="Humo" onerror="this.onerror=null; this.src='humo.png';">
+            <img src="assets/images/payme.png" alt="Payme" class="supported-app-logo" title="Payme" onerror="this.onerror=null; this.src='payme.png';">
+            <img src="assets/images/uzum.png" alt="Uzum Bank" class="supported-app-logo" title="Uzum Bank" onerror="this.onerror=null; this.src='uzum.png';">
+            <img src="assets/images/apelsin.png" alt="Apelsin / Uzum" class="supported-app-logo" title="Apelsin" onerror="this.onerror=null; this.src='apelsin.png';">
+            <img src="assets/images/tbc.svg" alt="TBC Bank" class="supported-app-logo" title="TBC" onerror="this.onerror=null; this.src='tbc.svg';">
+          </div>
+          <p class="text-muted small mb-0">
+            Yuqoridagi ilovalarning istalgan birini oching, nusxalangan karta raqamini kiriting va to'lovni tasdiqlang.
+          </p>
+        </div>
+
+        <!-- Security & Instructions Notice -->
+        <div class="p-3 rounded-3 mb-4" style="background: var(--color-surface-glass); border: 1px solid var(--color-border);">
+          <div class="d-flex gap-3 align-items-start">
+            <i class="bi bi-info-circle-fill text-info fs-5 mt-1"></i>
+            <div class="small text-secondary">
+              <strong class="text-white d-block mb-1">Xavfsizlik va Maxfiylik</strong>
+              Ushbu sahifa statik veb-sayt bo'lib, karta ma'lumotlarini serverda saqlamaydi yoki avtomatik tranzaksiya amalga oshirmaydi. To'lov to'liq sizning mobil bank ilovangiz orqali amalga oshiriladi.
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="text-center">
+          <a href="index.html" class="btn-modern btn-glass">
+            <i class="bi bi-arrow-left"></i> Bosh sahifaga qaytish
+          </a>
+        </div>
+
+      </div>
     </div>
+  </main>
 
-    <!-- Particles.js -->
-    <script>
-        const canvas = document.getElementById('particles-canvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="custom-footer">
+    <div class="container text-center">
+      <div class="footer-brand mb-2 font-heading">Begzod<span class="brand-dot">.dev</span></div>
+      <p class="footer-text mb-3">
+        © <span class="current-year">2026</span> Begzod Axmetov. Barcha huquqlar himoyalangan.
+      </p>
+      <div class="text-muted small">
+        <a href="index.html" class="text-decoration-none text-secondary me-3">Bosh sahifa</a>
+        <a href="index.html#contact" class="text-decoration-none text-secondary me-3">Aloqa</a>
+        <a href="https://t.me/turkmanshox" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-secondary">Telegram</a>
+      </div>
+    </div>
+  </footer>
 
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
+  <!-- Toast Notification Container -->
+  <div id="globalToast" class="toast-notice" role="alert" aria-live="assertive">
+    <i class="bi bi-check-circle-fill"></i>
+    <span id="toastText">Nusxalandi!</span>
+  </div>
 
-        let mouseX = 0, mouseY = 0;
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        class Particle {
-            constructor() { this.reset(); this.y = Math.random() * canvas.height; this.opacity = Math.random() * 0.6 + 0.2; }
-            reset() {
-                this.x = Math.random() * canvas.width;
-                this.y = -10;
-                this.size = Math.random() * 3 + 1;
-                this.speedX = Math.random() * 0.5 - 0.25;
-                this.speedY = Math.random() * 1.5 + 0.5;
-                this.hue = Math.random() * 60 + 220;
-            }
-            update() {
-                const dx = mouseX - this.x, dy = mouseY - this.y, distance = Math.hypot(dx, dy);
-                if (distance < 150) {
-                    const force = (150 - distance) / 150;
-                    this.x -= (dx / distance) * force * 3;
-                    this.y -= (dy / distance) * force * 3;
-                }
-                this.x += this.speedX; this.y += this.speedY;
-                if (this.y > canvas.height + 10) this.reset();
-                if (this.x > canvas.width) this.x = 0;
-                if (this.x < 0) this.x = canvas.width;
-            }
-            draw() {
-                ctx.fillStyle = `hsla(${this.hue}, 80%, 60%, ${this.opacity})`;
-                ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
-            }
+  <!-- Core App JS -->
+  <script src="js/app.js"></script>
+
+  <!-- Page-specific copy listener -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cardDisplay = document.getElementById('cardNumberDisplay');
+      const copyBtn = document.getElementById('copyCardBtn');
+      const copyBtnText = document.getElementById('copyBtnText');
+
+      function copyCard() {
+        if (!cardDisplay) return;
+        const rawDigits = cardDisplay.innerText.replace(/\s+/g, '');
+        if (window.BegzodApp && window.BegzodApp.copyText) {
+          window.BegzodApp.copyText(rawDigits, 'Karta raqami nusxalandi!');
+        } else {
+          navigator.clipboard.writeText(rawDigits);
         }
-
-        const particles = Array.from({length: 120}, () => new Particle());
-
-        function connectParticles() {
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const distance = Math.hypot(dx, dy);
-                    if (distance < 120) {
-                        const opacity = 0.3 * (1 - distance / 120);
-                        ctx.strokeStyle = `rgba(102, 126, 234, ${opacity})`;
-                        ctx.lineWidth = 1;
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.stroke();
-                    }
-                }
-            }
+        if (copyBtnText) {
+          copyBtnText.textContent = 'Nusxalandi! ✓';
+          setTimeout(() => {
+            copyBtnText.textContent = 'Karta raqamini nusxalash';
+          }, 2500);
         }
+      }
 
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => { p.update(); p.draw(); });
-            connectParticles();
-            requestAnimationFrame(animate);
-        }
-        animate();
-
-        // Copy to clipboard
-        document.getElementById('copyBtn').addEventListener('click', () => {
-            const cardNum = document.getElementById('cardNumber').innerText.replace(/\s/g, '');
-            navigator.clipboard.writeText(cardNum).then(() => {
-                const btn = document.getElementById('copyBtn');
-                const text = document.getElementById('btnText');
-                text.innerText = 'Nusxalandi!';
-                btn.classList.add('copied');
-                setTimeout(() => {
-                    text.innerText = 'Karta raqamini nusxalash';
-                    btn.classList.remove('copied');
-                }, 2000);
-            });
-        });
-    </script>
+      copyBtn?.addEventListener('click', copyCard);
+      cardDisplay?.addEventListener('click', copyCard);
+    });
+  </script>
 </body>
 </html>
