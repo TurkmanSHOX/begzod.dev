@@ -1,20 +1,20 @@
 {
-  "name": "Begzod Axmetov - Web Developer",
+  "name": "Begzod Axmetov — Project Manager, Web Dasturchi & IT Mentor",
   "short_name": "Begzod.dev",
   "icons": [
     {
-      "src": "android-chrome-192x192.png",
+      "src": "assets/icons/android-chrome-192x192.png?v=2",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "android-chrome-512x512.png",
+      "src": "assets/icons/android-chrome-512x512.png?v=2",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "theme_color": "#302b63",
-  "background_color": "#0f0c29",
+  "background_color": "#080616",
   "display": "standalone",
   "start_url": "/",
   "scope": "/"

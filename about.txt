@@ -1,6 +1,7 @@
-This favicon was generated using the following graphics from Twitter Twemoji:
+BEGZOD.DEV FAVICON
+==================
+Custom designed favicon featuring the letter 'B' in bold white on a deep purple-blue gradient (#140e36 to #7c3aed / #302b63) matching the official Begzod.dev brand styling.
 
-- Graphics Title: 1f4b3.svg
-- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
-- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f4b3.svg
-- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Author: Begzod Axmetov
+Formats: SVG, ICO (16x16, 32x32, 48x48), PNG (16x16, 32x32, 48x48, 180x180, 192x192, 512x512)
+Year: 2026

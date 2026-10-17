@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140e36"/>
+      <stop offset="45%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with smooth rounded corners -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
+  <rect x="8" y="8" width="496" height="496" rx="107" fill="none" stroke="url(#borderGrad)" stroke-width="16"/>
+  <!-- Bold White 'B' Letter -->
+  <text x="256" y="272" font-family="'Space Grotesk', 'Segoe UI', 'Arial', sans-serif" font-weight="900" font-size="340" fill="#ffffff" text-anchor="middle" dominant-baseline="central">B</text>
+</svg>
