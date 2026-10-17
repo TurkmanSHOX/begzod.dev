@@ -1,14 +1,8 @@
 /**
  * BEGZOD.DEV — Core Application Scripts
- * Features:
- * - Multilingual Switcher (UZ, EN, RU) with persistent state
- * - Light / Dark Theme Switcher with persistent state
- * - Anti-Spam Phone Reveal
- * - Dynamic Year Update (2026+)
- * - Toast Notification Utility
- * - Universal Copy to Clipboard
- * - Performance-Optimized Particle Network with prefers-reduced-motion check
- * - Accessible Keyboard Focus & Mobile Drawer Handling
+ * Author: Begzod Axmetov
+ * Roles: Project Manager, Web Developer & IT Mentor
+ * Organizations: LIMON DIGITAL AGENCY | Al-Xorazmiy vorislari (Urganch) | Urganch Raqamli Texnologiyalar Texnikumi
  */
 
 (function () {
@@ -21,227 +15,221 @@
     uz: {
       nav_home: 'Bosh sahifa',
       nav_about: 'Men haqimda',
-      nav_education: 'Ta\'lim & Trenerlik',
+      nav_experience: 'Tajriba & Faoliyat',
       nav_skills: 'Texnologiyalar',
-      nav_projects: 'Loyihalar',
       nav_contact: 'Aloqa',
       nav_payment: 'To\'lov',
       nav_connect_btn: 'Bog\'lanish',
 
       hero_location: 'Urganch, O\'zbekiston',
       hero_greeting: 'Salom, men',
-      hero_role: 'Full-Stack Web Dasturchi & IT Trener',
-      hero_desc: 'Zamonaviy web-texnologiyalar, toza kod, qulay foydalanuvchi interfeyslari (UI/UX) va innovatsion IT yechimlar yaratuvchi dasturchi hamda yoshlar ustozi.',
-      hero_btn_projects: 'Loyihalarni ko\'rish',
+      hero_role: 'Project Manager, Web Dasturchi & IT Mentor',
+      hero_desc: 'LIMON DIGITAL AGENCY kompaniyasida Project Manager va mentor, "Al-Xorazmiy vorislari" Urganch tumani menejeri. Zamonaviy IT loyihalarni boshqarish, sifatli veb-yechimlar yaratish va yosh mutaxassislarni tayyorlash bilan shug\'ullanaman.',
       hero_btn_contact: 'Bog\'lanish',
+      hero_btn_experience: 'Tajriba & Faoliyat',
       hero_btn_pay: 'To\'lov sahifasi',
 
-      stats_projects: 'Ochiq Loyihalar',
-      stats_responsive: 'Responsive Dizayn',
-      stats_architecture: 'Statik Arxitektura',
+      stats_experience: 'Yillik Tajriba',
+      stats_teams: 'Boshqarilgan Loyihalar',
+      stats_agency: 'Limon Digital Agency',
       stats_location: 'Xorazm, O\'zbekiston',
 
       about_badge: 'Men haqimda',
       about_title: 'Shaxsiy va Kasbiy Ma\'lumotlar',
-      about_desc: 'Dasturlash, zamonaviy standartlar va amaliy loyihalarga bo\'lgan professional yondashuvim.',
-      about_p1: 'Men Begzod Axmetov — Toshkent Axborot Texnologiyalari Universiteti (TATU) Urganch filiali Kompyuter injiniringi yo\'nalishi bitiruvchisiman. Dasturlash sohasida veb-saytlar, boshqaruv tizimlari, test platformalari va interaktiv IT yechimlar yaratish bilan shug\'ullanaman.',
-      about_p2: 'Asosiy e\'tiborim toza arxitektura, tez yuklanish, yuqori xavfsizlik va foydalanuvchiga qulay interfeys (UX) yaratishga qaratilgan.',
+      about_desc: 'IT boshqaruvi, dasturlash va yoshlar ta\'limiga bo\'lgan professional yondashuvim.',
+      about_p1: 'Men Begzod Axmetov — Toshkent Axborot Texnologiyalari Universiteti (TATU) Urganch filiali Kompyuter injiniringi yo\'nalishi bitiruvchisiman. Hozirda LIMON DIGITAL AGENCY agentligida Project Manager va mentor, shuningdek "Al-Xorazmiy vorislari" tizimining Urganch tumanida menejeri sifatida faoliyat yuritaman.',
+      about_p2: 'Faoliyatim IT loyihalarni samarali rejalashtirish, dasturchilar jamoasini boshqarish, texnik standartlar va zamonaviy veb-platformalar ishlab chiqishni o\'z ichiga oladi.',
       about_name_lbl: 'To\'liq ism',
-      about_role_lbl: 'Mutaxassislik',
+      about_role_lbl: 'Lavozim',
+      about_role_val: 'Project Manager & Mentor',
       about_loc_lbl: 'Manzil',
       about_status_lbl: 'Holat',
-      about_status_val: 'Yangi loyihalar uchun ochiq',
+      about_status_val: 'Faol / Hamkorlikka ochiq',
 
-      edu_badge: 'Ta\'lim & Tajriba',
-      edu_title: 'IT Trenerlik va O\'qitish Faoliyati',
-      edu_desc: 'Yoshlarga dasturlash va axborot texnologiyalarini o\'rgatish, amaliy mentorlik va dars berish tajribam.',
-      edu_card1_title: 'Maxsus fan o\'qituvchisi & Trener',
-      edu_card1_inst: 'Urganch Raqamli Texnologiyalar Texnikumi',
-      edu_card1_desc: 'Talabalarga zamonaviy veb-dasturlash, algoritmlar, ma\'lumotlar tuzilmasi va kompyuter injiniringi fanlaridan amaliy darslar o\'tish.',
-      edu_card2_title: 'IT Trener & Mentor',
-      edu_card2_inst: 'Beruniy IT Park & O\'quv markazlari',
-      edu_card2_desc: 'Yoshlarni frontend dasturlash, HTML/CSS/JavaScript, mBot robototexnika va zamonaviy IT ko\'nikmalariga o\'rgatish.',
-      edu_card3_title: 'Kompyuter injiniringi (Bakalavr)',
-      edu_card3_inst: 'TATU Urganch Filiali',
-      edu_card3_desc: 'Dasturiy ta\'minot arxitekturasi, tarmoq xavfsizligi, mikrokontrollerlar va algoritmlarni chuqur o\'rganish.',
+      exp_badge: 'Tajriba & Martaba',
+      exp_title: 'Professional Ish Tajribasi',
+      exp_desc: 'Boshqaruv, mentorlik va ta\'lim sohasidagi asosiy faoliyat bosqichlarim.',
 
-      skills_badge: 'Texnologiyalar',
-      skills_title: 'Ko\'nikmalar va Vositalar',
-      skills_desc: 'Loyihalarni ishlab chiqishda foydalaniladigan tekshirilgan vositalar va texnologiyalar.',
+      exp_card1_title: 'Mentor & Project Manager',
+      exp_card1_inst: 'LIMON DIGITAL AGENCY',
+      exp_card1_desc: 'Raqamli loyihalarni boshqarish, mijozlar talablarini tahlil qilish, jamoani muvofiqlashtirish va dasturchilarga mentorlik qilish.',
 
-      projects_badge: 'Portfolio',
-      projects_title: 'Ochiq Kodli Loyihalarim',
-      projects_desc: 'GitHub profilimdagi real va amaliy loyihalar to\'plami.',
-      filter_all: 'Barchasi',
-      filter_web: 'Web platformalar',
-      filter_service: 'Xizmatlar & Biznes',
-      filter_ai: 'Robototexnika & AI',
-      filter_test: 'Test tizimlari',
+      exp_card2_title: 'Menejer',
+      exp_card2_inst: '"Al-Xorazmiy vorislari" (Urganch tumani)',
+      exp_card2_desc: 'Iqtidorli yoshlar bilan ishlash, innovatsion g\'oyalar va IT loyihalarni qo\'llab-quvvatlash hamda jarayonlarni boshqarish.',
+
+      exp_card3_title: 'Maxsus fan o\'qituvchisi',
+      exp_card3_inst: 'Urganch Raqamli Texnologiyalar Texnikumi',
+      exp_card3_desc: 'Veb-dasturlash, algoritmlar va axborot texnologiyalari yo\'nalishida talabalarga amaliy ta\'lim va kasbiy ko\'nikmalar berish.',
+
+      exp_card4_title: 'Kompyuter injiniringi (Bakalavr)',
+      exp_card4_inst: 'TATU Urganch Filiali',
+      exp_card4_desc: 'Dasturiy ta\'minot arxitekturasi, ma\'lumotlar bazasi, tarmoq tizimlari va algoritmlarni chuqur o\'rganish.',
+
+      skills_badge: 'Texnologiyalar & Boshqaruv',
+      skills_title: 'Ko\'nikmalar va Metodologiyalar',
+      skills_desc: 'Loyihalarni muvaffaqiyatli amalga oshirishda qo\'llaniladigan vositalar.',
 
       contact_badge: 'Aloqa',
       contact_title: 'Men bilan Bog\'laning',
-      contact_desc: 'Savollar, hamkorlik yoki yangi loyihalar bo\'yicha to\'g\'ridan-to\'g\'ri aloqaga chiqing.',
+      contact_desc: 'Savollar, loyihalar yoki hamkorlik takliflari bo\'yicha to\'g\'ridan-to\'g\'ri aloqaga chiqing.',
       contact_direct_title: 'To\'g\'ridan-to\'g\'ri Aloqa Kanallari',
       contact_phone_reveal: 'Raqamni ko\'rsatish',
       contact_form_title: 'Tezkor Xabar Qoldirish',
-      contact_form_desc: 'Xabaringizni yozing va o\'zingizga qulay kanal (Telegram yoki Email) orqali jo\'nating. Server talab qilinmaydi.',
+      contact_form_desc: 'Xabaringizni yozing va Telegram yoki Email orqali to\'g\'ridan-to\'g\'ri yo\'llang.',
       contact_form_name: 'Ismingiz *',
       contact_form_email: 'Email yoki Telefoningiz',
       contact_form_msg: 'Xabaringiz *',
-      contact_form_method: 'Qaysi usulda yuborasiz?',
+      contact_form_method: 'Yuborish usuli:',
       contact_form_submit: 'Xabarni yuborish',
 
-      footer_desc: 'Full-Stack Web Dasturchi & IT Trener portfolio veb-sayti. Urganch, Xorazm, O\'zbekiston.'
+      footer_desc: 'Project Manager, Web Dasturchi & IT Mentor portfolio veb-sayti. Urganch, Xorazm, O\'zbekiston.'
     },
     en: {
       nav_home: 'Home',
       nav_about: 'About',
-      nav_education: 'Education & Trainer',
+      nav_experience: 'Experience & Career',
       nav_skills: 'Skills',
-      nav_projects: 'Projects',
       nav_contact: 'Contact',
       nav_payment: 'Payment',
       nav_connect_btn: 'Get in Touch',
 
       hero_location: 'Urgench, Uzbekistan',
       hero_greeting: 'Hello, I\'m',
-      hero_role: 'Full-Stack Web Developer & IT Instructor',
-      hero_desc: 'Software engineer and IT trainer building fast, modern web applications, clean UI/UX designs, and mentoring future developers.',
-      hero_btn_projects: 'View Projects',
+      hero_role: 'Project Manager, Web Developer & IT Mentor',
+      hero_desc: 'Project Manager and Mentor at LIMON DIGITAL AGENCY, Manager of "Al-Khwarizmi Descendants" in Urgench district. Leading digital product delivery, web development, and mentoring future IT talents.',
       hero_btn_contact: 'Contact Me',
+      hero_btn_experience: 'Experience & Career',
       hero_btn_pay: 'Payment Page',
 
-      stats_projects: 'Open Projects',
-      stats_responsive: 'Responsive UI',
-      stats_architecture: 'Static Speed',
+      stats_experience: 'Years Experience',
+      stats_teams: 'Managed Projects',
+      stats_agency: 'Limon Digital Agency',
       stats_location: 'Khorezm, Uzbekistan',
 
       about_badge: 'About Me',
       about_title: 'Personal & Professional Background',
-      about_desc: 'My engineering mindset, software standards, and dedication to craftsmanship.',
-      about_p1: 'I am Begzod Axmetov — a Computer Engineering graduate from the Tashkent University of Information Technologies (TUIT) Urgench branch. I build web apps, testing platforms, robotic integrations, and interactive systems.',
-      about_p2: 'My core focus is clean architecture, performance, accessibility, and intuitive UI/UX design.',
+      about_desc: 'My leadership approach, technical knowledge, and passion for mentoring.',
+      about_p1: 'I am Begzod Axmetov — a Computer Engineering graduate from the Tashkent University of Information Technologies (TUIT) Urgench branch. I currently serve as Project Manager & Mentor at LIMON DIGITAL AGENCY and Manager of "Al-Khwarizmi Descendants" in Urgench district.',
+      about_p2: 'My core expertise spans agile project management, guiding software engineering teams, delivering web platforms, and mentoring tech youth.',
       about_name_lbl: 'Full Name',
-      about_role_lbl: 'Specialization',
+      about_role_lbl: 'Role',
+      about_role_val: 'Project Manager & Mentor',
       about_loc_lbl: 'Location',
       about_status_lbl: 'Status',
-      about_status_val: 'Open for projects & collaboration',
+      about_status_val: 'Active / Open to collaborations',
 
-      edu_badge: 'Teaching & Background',
-      edu_title: 'IT Mentorship & Teaching Activity',
-      edu_desc: 'Empowering young talents with coding, web technologies, and robotics.',
-      edu_card1_title: 'Specialized CS Teacher & Trainer',
-      edu_card1_inst: 'Urgench Technical College of Digital Technologies',
-      edu_card1_desc: 'Teaching web development, algorithms, data structures, and computer engineering to students.',
-      edu_card2_title: 'IT Trainer & Mentor',
-      edu_card2_inst: 'Beruni IT Park & Academy',
-      edu_card2_desc: 'Mentoring youth in frontend programming, HTML/CSS/JavaScript, and mBot robotics.',
-      edu_card3_title: 'Computer Engineering (B.Sc.)',
-      edu_card3_inst: 'TUIT Urgench Branch',
-      edu_card3_desc: 'In-depth study of software engineering, network systems, hardware design, and algorithms.',
+      exp_badge: 'Experience & Career',
+      exp_title: 'Professional Career Timeline',
+      exp_desc: 'Milestones across management, mentorship, and tech education.',
 
-      skills_badge: 'Tech Stack',
-      skills_title: 'Skills & Tools',
-      skills_desc: 'Core technologies and frameworks used across my open source work.',
+      exp_card1_title: 'Mentor & Project Manager',
+      exp_card1_inst: 'LIMON DIGITAL AGENCY',
+      exp_card1_desc: 'Leading digital products, overseeing client communications, sprint management, and mentoring developers.',
 
-      projects_badge: 'Portfolio',
-      projects_title: 'Featured Open Source Projects',
-      projects_desc: 'Authentic public repositories from my GitHub profile.',
-      filter_all: 'All',
-      filter_web: 'Web Platforms',
-      filter_service: 'Services & Business',
-      filter_ai: 'Robotics & AI',
-      filter_test: 'Testing Systems',
+      exp_card2_title: 'Manager',
+      exp_card2_inst: '"Al-Khwarizmi Descendants" (Urgench District)',
+      exp_card2_desc: 'Fostering young tech talents, coordinating innovative IT initiatives and youth innovation programs.',
+
+      exp_card3_title: 'Specialized CS Teacher',
+      exp_card3_inst: 'Urgench Technical College of Digital Technologies',
+      exp_card3_desc: 'Teaching web engineering, algorithms, and practical computing skills to college students.',
+
+      exp_card4_title: 'Computer Engineering (B.Sc.)',
+      exp_card4_inst: 'TUIT Urgench Branch',
+      exp_card4_desc: 'Comprehensive engineering degree covering software architecture, databases, networks, and algorithms.',
+
+      skills_badge: 'Skills & Tools',
+      skills_title: 'Competencies & Methodologies',
+      skills_desc: 'Technologies and agile methodologies utilized for successful project delivery.',
 
       contact_badge: 'Contact',
       contact_title: 'Let\'s Connect',
-      contact_desc: 'Reach out directly for project inquiries, consulting, or educational collaborations.',
+      contact_desc: 'Reach out for digital project management, IT mentorship, or consulting collaborations.',
       contact_direct_title: 'Direct Channels',
       contact_phone_reveal: 'Show Number',
-      contact_form_title: 'Quick Client Message',
-      contact_form_desc: 'Send a message directly via Telegram or Email client without any server delay.',
+      contact_form_title: 'Quick Message',
+      contact_form_desc: 'Send a direct message via Telegram or Email client.',
       contact_form_name: 'Your Name *',
       contact_form_email: 'Your Email or Phone',
       contact_form_msg: 'Your Message *',
-      contact_form_method: 'Preferred dispatch channel:',
+      contact_form_method: 'Preferred channel:',
       contact_form_submit: 'Send Message',
 
-      footer_desc: 'Full-Stack Web Developer & IT Instructor portfolio. Urgench, Khorezm, Uzbekistan.'
+      footer_desc: 'Project Manager, Web Developer & IT Mentor portfolio. Urgench, Khorezm, Uzbekistan.'
     },
     ru: {
       nav_home: 'Главная',
       nav_about: 'Обо мне',
-      nav_education: 'Образование и Тренерство',
-      nav_skills: 'Технологии',
-      nav_projects: 'Проекты',
+      nav_experience: 'Опыт и Карьера',
+      nav_skills: 'Навыки',
       nav_contact: 'Контакты',
       nav_payment: 'Оплата',
       nav_connect_btn: 'Связаться',
 
       hero_location: 'Ургенч, Узбекистан',
       hero_greeting: 'Привет, я',
-      hero_role: 'Full-Stack Веб-разработчик и IT-тренер',
-      hero_desc: 'Создаю современные быстрые веб-приложения, удобные интерфейсы (UI/UX) и обучаю будущих разработчиков.',
-      hero_btn_projects: 'Посмотреть проекты',
+      hero_role: 'Project Manager, Веб-разработчик и IT-ментор',
+      hero_desc: 'Project Manager и ментор в LIMON DIGITAL AGENCY, менеджер проекта "Наследники Аль-Хорезми" в Ургенчском районе. Управление IT-проектами, веб-разработка и наставничество.',
       hero_btn_contact: 'Связаться',
+      hero_btn_experience: 'Опыт и Карьера',
       hero_btn_pay: 'Страница оплаты',
 
-      stats_projects: 'Открытых проектов',
-      stats_responsive: 'Адаптивный дизайн',
-      stats_architecture: 'Быстрая статика',
+      stats_experience: 'Лет опыта',
+      stats_teams: 'Успешных проектов',
+      stats_agency: 'Limon Digital Agency',
       stats_location: 'Хорезм, Узбекистан',
 
       about_badge: 'Обо мне',
       about_title: 'Личная и Профессиональная Информация',
-      about_desc: 'Мой инженерный подход, стандарты кода и практический опыт разработки.',
-      about_p1: 'Я Бегзод Ахметов — выпускник Ургенчского филиала ТАТУ по специальности Компьютерный инжиниринг. Разрабатываю веб-платформы, системы тестирования и проекты с робототехникой.',
-      about_p2: 'Мой приоритет — чистая архитектура, высокая производительность и доступный UX.',
+      about_desc: 'Мой управленческий подход, технические стандарты и менторство.',
+      about_p1: 'Я Бегзод Ахметов — выпускник Ургенчского филиала ТАТУ по специальности Компьютерный инжиниринг. В настоящее время работаю Project Manager и ментором в LIMON DIGITAL AGENCY, а также менеджером проекта "Наследники Аль-Хорезми" в Ургенчском районе.',
+      about_p2: 'Моя деятельность включает управление цифровыми проектами, координацию команды разработчиков и менторство.',
       about_name_lbl: 'Полное имя',
-      about_role_lbl: 'Профессия',
+      about_role_lbl: 'Должность',
+      about_role_val: 'Project Manager & Ментор',
       about_loc_lbl: 'Локация',
       about_status_lbl: 'Статус',
-      about_status_val: 'Открыт для новых проектов',
+      about_status_val: 'Активен / Открыт к сотрудничеству',
 
-      edu_badge: 'Опыт и Преподавание',
-      edu_title: 'IT-Тренерство и Образовательная Деятельность',
-      edu_desc: 'Обучение молодежи веб-технологиям, программированию и робототехнике.',
-      edu_card1_title: 'Преподаватель специальных дисциплин',
-      edu_card1_inst: 'Ургенчский техникум цифровых технологий',
-      edu_card1_desc: 'Преподавание веб-разработки, алгоритмов и основ компьютерного инжиниринга.',
-      edu_card2_title: 'IT-тренер и ментор',
-      edu_card2_inst: 'IT Park Беруни и образовательные центры',
-      edu_card2_desc: 'Обучение основам frontend (HTML, CSS, JS) и робототехнике mBot.',
-      edu_card3_title: 'Компьютерный инжиниринг (Бакалавр)',
-      edu_card3_inst: 'Ургенчский филиал ТАТУ',
-      edu_card3_desc: 'Углубленное изучение программной инженерии, сетей и алгоритмов.',
+      exp_badge: 'Опыт и Карьера',
+      exp_title: 'Профессиональный Опыт',
+      exp_desc: 'Ключевые этапы в управлении проектами, наставничестве и преподавании.',
 
-      skills_badge: 'Технологии',
-      skills_title: 'Навыки и Инструменты',
-      skills_desc: 'Проверенный стек технологий, применяемый в моих открытых проектах.',
+      exp_card1_title: 'Ментор и Project Manager',
+      exp_card1_inst: 'LIMON DIGITAL AGENCY',
+      exp_card1_desc: 'Управление IT-продуктами, планирование спринтов, работа с клиентами и наставничество для разработчиков.',
 
-      projects_badge: 'Портфолио',
-      projects_title: 'Открытые Проекты на GitHub',
-      projects_desc: 'Подборка моих реальных репозиториев с открытым исходным кодом.',
-      filter_all: 'Все',
-      filter_web: 'Веб-платформы',
-      filter_service: 'Услуги и Бизнес',
-      filter_ai: 'Робототехника и AI',
-      filter_test: 'Системы тестирования',
+      exp_card2_title: 'Менеджер',
+      exp_card2_inst: '"Наследники Аль-Хорезми" (Ургенчский район)',
+      exp_card2_desc: 'Координация талантливой молодежи, поддержка инновационных стартапов и развитие IT-инициатив.',
+
+      exp_card3_title: 'Преподаватель специальных дисциплин',
+      exp_card3_inst: 'Ургенчский техникум цифровых технологий',
+      exp_card3_desc: 'Обучение веб-разработке, алгоритмам и информационным технологиям.',
+
+      exp_card4_title: 'Компьютерный инжиниринг (Бакалавр)',
+      exp_card4_inst: 'Ургенчский филиал ТАТУ',
+      exp_card4_desc: 'Программная инженерия, архитектура баз данных, сетевая безопасность и алгоритмы.',
+
+      skills_badge: 'Навыки и Инструменты',
+      skills_title: 'Компетенции и Методологии',
+      skills_desc: 'Инструменты управления проектами и проверенный стек разработки.',
 
       contact_badge: 'Контакты',
       contact_title: 'Свяжитесь со Мной',
-      contact_desc: 'Напишите по поводу проектов, сотрудничества или обучения.',
+      contact_desc: 'Напишите по вопросам управления проектами, менторства или сотрудничества.',
       contact_direct_title: 'Прямые Каналы Связи',
       contact_phone_reveal: 'Показать номер',
       contact_form_title: 'Быстрое Сообщение',
-      contact_form_desc: 'Отправьте сообщение напрямую через Telegram или Email без задержек.',
+      contact_form_desc: 'Отправьте сообщение напрямую через Telegram или Email.',
       contact_form_name: 'Ваше имя *',
       contact_form_email: 'Email или телефон',
       contact_form_msg: 'Ваше сообщение *',
       contact_form_method: 'Способ отправки:',
       contact_form_submit: 'Отправить сообщение',
 
-      footer_desc: 'Портфолио Full-Stack разработчика и IT-тренера. Ургенч, Хорезм, Узбекистан.'
+      footer_desc: 'Портфолио Project Manager, веб-разработчика и IT-ментора. Ургенч, Хорезм, Узбекистан.'
     }
   };
 
@@ -251,10 +239,8 @@
   function setLanguage(lang) {
     if (!i18nData[lang]) lang = 'uz';
     localStorage.setItem('begzod_lang', lang);
-
     document.documentElement.lang = lang;
 
-    // Update active class on language buttons
     document.querySelectorAll('[data-set-lang]').forEach(btn => {
       if (btn.getAttribute('data-set-lang') === lang) {
         btn.classList.add('active');
@@ -263,7 +249,6 @@
       }
     });
 
-    // Translate DOM elements
     const dict = i18nData[lang];
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
