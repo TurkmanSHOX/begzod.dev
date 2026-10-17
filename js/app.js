@@ -39,7 +39,7 @@
       about_badge: 'Men haqimda',
       about_title: 'Shaxsiy va Kasbiy Ma\'lumotlar',
       about_desc: 'IT boshqaruvi, dasturlash va yoshlar ta\'limiga bo\'lgan professional yondashuvim.',
-      about_p1: 'Men Begzod Axmetov — Toshkent Axborot Texnologiyalari Universiteti (TATU) Urganch filiali Kompyuter injiniringi yo\'nalishi bitiruvchisiman. Hozirda LIMON DIGITAL AGENCY agentligida Project Manager va mentor, shuningdek "Al-Xorazmiy vorislari" tizimining Urganch tumanida menejeri sifatida faoliyat yuritaman.',
+      about_p1: 'Men Begzod Axmetov — Toshkent Axborot Texnologiyalari Universiteti (TATU) Urganch filiali Kompyuter injiniringi yo\'nalishini bitirganman. Hozirda LIMON DIGITAL AGENCY agentligida Project Manager va mentor, shuningdek "Al-Xorazmiy vorislari" tizimining Urganch tumanida menejeri sifatida faoliyat yuritaman.',
       about_p2: 'Faoliyatim IT loyihalarni samarali rejalashtirish, dasturchilar jamoasini boshqarish, texnik standartlar va zamonaviy veb-platformalar ishlab chiqishni o\'z ichiga oladi.',
       about_name_lbl: 'To\'liq ism',
       about_role_lbl: 'Lavozim',
